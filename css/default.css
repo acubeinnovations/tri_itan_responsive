@@ -31,6 +31,7 @@ border-right:1px solid #000;
 	margin:0px  !important;
 	display: block;
 	text-transform: capitalize;
+	color: #000 !important;
 	font-size:14px;
 	background-image:url('../images/flip.gif');
 	background-repeat:no-repeat;
@@ -47,7 +48,7 @@ border-right:1px solid #000;
 
 .navbar-nav > li > a:hover{
 	color: #FFFFFF !important;
-		font-size:14px;
+	font-size:14px;
 	overflow: hidden;
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition: all 0.1s ease-in-out;
