@@ -1,0 +1,15 @@
+@font-face {
+	font-family: "MuseoSans";
+	src: url("../fonts/MuseoSans-300.otf");
+}
+
+
+body {
+	color:#000000;
+	font-family: "MuseoSans";
+	font-size:12px;
+	background-color: #dd4d31;
+	overflow: hidden;
+	height:500px;
+
+}
