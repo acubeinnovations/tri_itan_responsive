@@ -15,3 +15,123 @@ body {
 }
 
 
+@media (min-width: 768px) {
+.navbar-nav{
+padding:0px  !important;
+margin:0px  !important;
+}
+.navbar-nav > li{
+padding:0px  !important;
+margin:0px  !important;
+border-right:1px solid #000;
+}
+.navbar-nav > li > a {
+	padding-top:5px !important; 
+	padding-bottom:5px !important;
+	margin:0px  !important;
+	display: block;
+	text-transform: capitalize;
+
+	background-image:url('../images/flip.gif');
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	font-family: "MuseoSans";
+	bottom:1px;
+}
+
+
+.navbar-nav > li > a:hover{
+	color: #FFFFFF !important;
+	overflow: hidden;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	background-image:url('../images/flip.gif');
+	background-repeat:no-repeat;
+	background-position:0px -43px;
+	font-family: "MuseoSans";
+	bottom:1px;
+
+}
+.navbar {min-height:30px !important}
+
+.dropdown-menu{
+padding:0px !important;
+bottom:29px !important;
+width:150px;
+}
+
+
+.dropdown-menu > li > a{
+	display:block;
+	height: 25px;
+	color:#000000;
+	font-size:12px;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	padding-top: 4px;
+	padding-right: 6px;
+	padding-bottom: 4px;
+	padding-left: 14px;
+	margin: 0px;
+	text-transform: capitalize;
+	overflow: hidden;
+	margin-bottom: 1px;
+	background-color:#fff;
+	background-image:url('../images/flip_sub.png');
+	background-repeat:repeat-x;
+	background-position:0px 0px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	font-family: "MuseoSans";
+}
+.dropdown-menu > li > a:hover{
+	color:#FFFFFF;
+	text-decoration: none;
+	margin: 0px;
+	font-size: 12px;
+	text-transform: capitalize;
+	overflow: hidden;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	background-image:url('../images/flip_sub.png');
+	background-repeat:repeat-x;
+	background-position:0px -25px;
+	font-family: "MuseoSans";
+}
+
+
+
+
+.navbar-brand{
+width: 150px;
+}
+
+	#logo {
+		height: 150px;
+		width: 150px;
+		text-decoration: none;
+		background-color: #000000;
+		float: left;
+		position: fixed;
+		visibility: visible;
+		left: 0px;
+		bottom: 0px;
+		background-image: url(../images/logo.jpg);
+		background-repeat: no-repeat;
+	}
+}
+

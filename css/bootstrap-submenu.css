@@ -3,6 +3,8 @@
  */
 
 /*! Acube Innovations */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 
 .sidebar-nav {
     padding: 9px 0;
@@ -46,4 +48,4 @@
     left: -6px;
 }
 
-
+}
