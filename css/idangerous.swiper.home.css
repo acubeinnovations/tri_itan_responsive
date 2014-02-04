@@ -24,7 +24,7 @@ min-height:400px;
 
 
 .inner{
-	height: 1200px;
+	height: 1600px;
 	width: 400px;	
 	opacity: 0.1;
 }
@@ -64,7 +64,7 @@ min-height:400px;
 
 .pagination {
 	width:164px;
-	position:relative;
+	position:fixed;
 	z-index:200;
 }
 .swiper-pagination-switch {
@@ -85,3 +85,29 @@ min-height:400px;
 	background: #fff;
 }
 
+
+.nav_up, .nav_down
+{
+	position: relative;
+	cursor: pointer;
+	display: block;
+    background: url(../images/jssor_arrows.png) no-repeat;
+    overflow:hidden;
+    opacity: .4; filter:alpha(opacity=40);
+	z-index:5;
+	margin-bottom:1px;
+}
+.nav_up { background-position: 0px 0px; }
+.nav_down { background-position: -40px 0px; }
+.nav_up:hover { background-position: 0px 0px; opacity: .8; filter:alpha(opacity=80); }
+.nav_down:hover { background-position: -40px 0px; opacity: .8; filter:alpha(opacity=80); }
+
+
+
+#swiper_nav{ 
+height:282px;width:50px; 
+}
+
+#keyboard-intro-home{
+z-index:30;
+}
