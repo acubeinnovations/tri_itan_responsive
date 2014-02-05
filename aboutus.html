@@ -19,15 +19,15 @@
 
     <!-- Swiper -->
     <link href="css/idangerous.swiper.css" rel="stylesheet">
-    <!-- Swiper customized for home -->
-    <link href="css/idangerous.swiper.aboutus.css" rel="stylesheet">
+
 	<!-- default for all pages -->
     <link href="css/default.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/aboutus.css"/>
 
   </head>
 
   <body  class="affix">
-
 
 
 
@@ -68,98 +68,40 @@
 
 
 
+
     <div class="container-fluid" >
 
-
-
-
-
-
-
-
-
-
-
-
-	<div class="swiper-container swiper-container-horizontal" id="swiper-container-horizontal">
-
-		<div class="pagination"></div>
-
-		<div class="swiper-wrapper swiper-wrapper-horizontal">
-
-
-
-			<div class="swiper-slide swiper-slide-horizontal " >
-				<div class="inner">
-
-
-
-1
-
-
-	
-
-
-				</div>
-			</div>
-
-			<div class="swiper-slide swiper-slide-horizontal">
-				<div class="inner">
-
-
-
-2
-
-
-
-				</div>
-			</div>
-
-
-			<div class="swiper-slide swiper-slide-horizontal">
-				<div class="inner">
-
-
-3
-
-
-
-				</div>
-			</div>
-
-
-			<div class="swiper-slide swiper-slide-horizontal">
-				<div class="inner">
-
-
-
-4
-
-
-				</div>
-			</div>
-
-
-
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<div id="timeline">
+
+    <ul id="dates">
+        <li><a href="#1900" class="slide-link"><div class="slide-img-div"><img class="slide-img" src="images/slide-gif.gif"  border="0"></div><div class="slide-content-div"><span class="slide-title" ">LOREM ISPUM</span><p class="slide-content">Lorem ipsum dolor sit amet, vitae lectus interdum, tincidunt nonummy sit a, varius in et etiam sagittis varius. Urna tempor sed sociosqu tortor donec feugiat, a cras, a eget laoreet maecenas porttitor nam, ullamcorper maecenas in, non pede odio. Sit odio potenti odio ultricies, in a, congue ante et leo vivamus tempus, non eos eum a etiam, sit massa similique ac. Vel at pulvinar consectetuer sit. Adipiscing ut, tellus ut libero, nunc dui elit elit vestibulum donec, venenatis ipsum laoreet suspendisse mi integer. Vestibulum nunc ut maecenas integer erat ut, ut iaculis posuere cras volutpat quis odio, massa tempor libero sem erat sodales vestibulum. Nascetur non etiam cras sem, lorem diam reiciendis ut, volutpat odio aliquam praesent, et lacinia massa, in vulputate elementum condimentum. Venenatis nibh facilisis enim, est fringilla molestie ante, amet elit. Sagittis dolor nibh sed luctus a nec, suscipit massa. </p></div></a></li>
+		<li><a href="#1930" class="slide-link"><div class="slide-img-div"><img class="slide-img" src="images/gallery-2.jpg"  border="0"></div><div class="slide-content-div"><span class="slide-title" >LOREM ISPUM</span><p class="slide-content">Lorem ipsum dolor sit amet, vitae lectus interdum, tincidunt nonummy sit a, varius in et etiam sagittis varius. Urna tempor sed sociosqu tortor donec feugiat, a cras, a eget laoreet maecenas porttitor nam, ullamcorper maecenas in, non pede odio. Sit odio potenti odio ultricies, in a, congue ante et leo vivamus tempus, non eos eum a etiam, sit massa similique ac. Vel at pulvinar consectetuer sit. Adipiscing ut, tellus ut libero, nunc dui elit elit vestibulum donec, venenatis ipsum laoreet suspendisse mi integer. Vestibulum nunc ut maecenas integer erat ut, ut iaculis posuere cras volutpat quis odio, massa tempor libero sem erat sodales vestibulum. Nascetur non etiam cras sem, lorem diam reiciendis ut, volutpat odio aliquam praesent, et lacinia massa, in vulputate elementum condimentum. Venenatis nibh facilisis enim, est fringilla molestie ante, amet elit. Sagittis dolor nibh sed luctus a nec, suscipit massa. </p></div></a></li>
+
+        <li><a href="#1944" class="slide-link">1944</a></li>
+        <li><a href="#1950" class="slide-link">1950</a></li>
+        <li><a href="#1971">1971</a></li>
+        <li><a href="#1977">1977</a></li>
+        <li><a href="#1989">1989</a></li>
+        <li><a href="#1999">1999</a></li>
+        <li><a href="#2001">2001</a></li>
+        <li><a href="#2011">2011</a></li>
+    </ul>
+    <ul id="issues">
+        <li id="001">&nbsp;</li>
+        <li id="002">&nbsp;</li>
+        <li id="003">&nbsp;</li>
+        <li id="004">&nbsp;</li>
+        <li id="005">&nbsp;</li>
+        <li id="006">&nbsp;</li>
+		<li id="007">&nbsp;</li>
+        <li id="008">&nbsp;</li>
+        <li id="009">&nbsp;</li>
+        <li id="010">&nbsp;</li>
+		
+    </ul>
+</nav>
+</div>
+<div id="arrow_bg"><a href="#" id="next">+</a> <a href="#" id="prev">-</a> </div>
 
 
 
@@ -176,7 +118,16 @@
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/idangerous.swiper-2.0.min.js"></script>
-	<script src="js/aboutus.js"></script>
+	<script src="js/jquery.timelinr-0.9.54.js"></script>
+	<script type="text/javascript" src="js/aboutus.js"></script>
+	<script>
+		$(function(){
+			$().timelinr({
+				arrowKeys: 'true'
+			})
+		});
+		
+	</script>
   </body>
 </html>
 
