@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+body 
+{
+cursor: url(../../images/open_white.png) , progress;
+}
+.selected{
+	height: 260px;
+	width: 260px;
+	background-color: #FF0000;
+	position: relative;
+}
+.selected img{
+	height: 160px;
+	width: 260px;
+	background-color: #FF0000;
+	display:none;
+}
+.selected.caption fade-caption.mask a{
+	display:none;
+	}
+.selected  img a:hover {
+	border:5px solid #E31441;
+	height: 250px;
+	width: 250px;
+}
+.box a
+{
+	display: block;
+	background-color: #0066FF;
+}
+.box a:hover
+{
+	cursor: url(../../images/open_white.png) ,default;
+	color: #f60;
+}
+.box img a:hover {
+	border:5px solid #00FFFF;
+	background:#FF0000;
+	height: 250px;
+	width: 250px;
+}
+.images {
+}
+
+
+ .mask {
+	position:relative;
+	height:260px;
+	width:260px;
+	overflow:hidden;
+}
+
+
+
+.mask .caption {
+	background-color: #000000;
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+	left: 0px;
+	top: -250px;
+	background-image: url(../../images/mask_bg.png);
+	background-repeat: no-repeat;
+	background-position: 200px 15px;
+	height: 60px;
+	font-family: "MuseoSans";
+}  
+
+.mask .fade-caption {
+	opacity: 0;
+	width: 260px;
+	height: 65px;
+	text-align: left;
+	font-size:0.8em;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	position: absolute;
+	top: 195px;
+	font-family: "MuseoSans";
+}  
+
+.mask:hover .fade-caption {
+	opacity: 1;
+	width: 260px;
+	height: 65px;
+	font-family: "MuseoSans";
+}  
+.subject {
+	float: left;
+	height: 260px;
+	width: 260px;
+	background-color: #999999;
+	left: 0px;
+	top: -50px;
+	font-family: "MuseoSans";
+}
+.subject img{
+	width:260px;
+	height:260px;
+	display:block;
+	visibility:visible;
+	float: left;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+.artist-name {
+	position:relative;
+	left:0px;
+	width:260px;
+	z-index:1;
+	top: 195px;
+	float: left;
+	height: 65px;
+	background-image: url(../../images/mask_bg.png);
+	background-repeat: no-repeat;
+	background-position: 200px 15px;
+	height: 68px;
+	background-color: #000000;
+	font-family: "MuseoSans";
+}
+#artist_bottom {
+	position:fixed;
+	left:0px;
+	width:100%;
+	height:auto;
+	z-index:1;
+	bottom: 0px;
+	background-color: #CCCC33;
+	font-family: "MuseoSans";
+}

@@ -1,0 +1,40 @@
+#motioncontainer {
+	width: 100%;
+	height: 780px;
+}
+
+
+#statusdiv {
+	background-color: lightyellow;
+	border: 1px solid gray;
+	position: absolute;
+	left: -300px;
+	visibility: hidden;
+}
+
+#motioncontainer a:hover {
+	color: red; 
+}
+.art {
+	float: left;
+	height: 260px;
+	width: 1560px;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	position: fixed;
+}
+h4 {
+	font-family: "MuseoSans";
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration: none;
+	margin: 23px;
+	padding: 0px;
+}
