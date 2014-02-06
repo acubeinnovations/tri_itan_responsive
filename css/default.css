@@ -16,14 +16,55 @@ body {
 
 
 @media (min-width: 768px) {
+
+.navbar-collapse{
+
+
+}
 .navbar-nav{
 padding:0px  !important;
 margin:0px  !important;
+border-left:1px solid #dd4d31 !important;
+background:#eaeaea !important;
 }
-.navbar-nav > li{
+.navbar {
+min-height:30px !important;
 padding:0px  !important;
 margin:0px  !important;
-border-right:1px solid #000;
+border:1px solid #dd4d31 !important;
+background:#eaeaea !important;
+}
+
+.navbar-nav > li{
+height:30px !important;
+width:150px !important;
+padding:0px  !important;
+margin:0px  !important;
+border-right:1px solid #dd4d31 !important;
+text-transform: capitalize !important;
+text-align:left;
+background:#eaeaea !important;
+}
+.dropdown > .dropdown-toggle a{
+	padding-top:5px !important; 
+	padding-bottom:5px !important;
+	margin:0px  !important;
+	display: block;
+	text-transform: capitalize !important;
+	color: #000 !important;
+	font-size:14px;
+	background:#eaeaea !important;
+	
+}
+
+.dropdown > .dropdown-toggle a:hover{
+
+	font-size:14px;
+	overflow: hidden;
+	color: #000 !important;
+	background:#FFF !important;
+	
+
 }
 .navbar-nav > li > a {
 	padding-top:5px !important; 
@@ -33,43 +74,36 @@ border-right:1px solid #000;
 	text-transform: capitalize !important;
 	color: #000 !important;
 	font-size:14px;
-	background-image:url('../images/flip.gif');
-	background-repeat:no-repeat;
-	background-position:0px 0px;
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition: all 0.1s ease-in-out;
-	-o-transition: all 0.1s ease-in-out;
-	-webkit-transition: all 0.1s ease-in-out;
-	transition: all 0.1s ease-in-out;
-	font-family: "MuseoSans";
-	bottom:1px;
+	background:#eaeaea !important;
+	
 }
 
 
 .navbar-nav > li > a:hover{
-	color: #FFFFFF !important;
+
 	font-size:14px;
 	overflow: hidden;
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition: all 0.1s ease-in-out;
-	-o-transition: all 0.1s ease-in-out;
-	-webkit-transition: all 0.1s ease-in-out;
-	transition: all 0.1s ease-in-out;
-	background-image:url('../images/flip.gif');
-	background-repeat:no-repeat;
-	background-position:0px -43px;
-	font-family: "MuseoSans";
-	bottom:1px;
+	color: #000 !important;
+	background:#FFF !important;
+	
 
 }
-.navbar {min-height:30px !important}
+
 
 .dropdown-menu{
 padding:0px !important;
-bottom:29px !important;
-width:150px;
+bottom:30px !important;
+width:120px !important;
+color: #000 !important;
+background:#eaeaea !important;
+padding:0px !important;
+margin:0px !important;
 }
-
+.dropdown-menu > li{
+	margin:0px !important;
+	width:120px !important;
+	padding:0px !important;
+}
 
 .dropdown-menu > li > a{
 	display:block;
@@ -85,33 +119,22 @@ width:150px;
 	margin: 0px;
 	text-transform: capitalize !important;
 	overflow: hidden;
-	margin-bottom: 1px;
-	background-color:#fff;
-	background-image:url('../images/flip_sub.png');
-	background-repeat:repeat-x;
-	background-position:0px 0px;
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition: all 0.1s ease-in-out;
-	-o-transition: all 0.1s ease-in-out;
-	-webkit-transition: all 0.1s ease-in-out;
-	transition: all 0.1s ease-in-out;
+	color: #000 !important;
+	font-size:12px;
+	background:#eaeaea !important;
 	font-family: "MuseoSans";
+	border-bottom:1px solid #dd4d31 !important;
+	border-right:1px solid #dd4d31 !important;
+	width:120px !important;
 }
 .dropdown-menu > li > a:hover{
-	color:#FFFFFF;
 	text-decoration: none;
 	margin: 0px;
 	font-size: 12px;
 	text-transform: capitalize !important;
 	overflow: hidden;
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition: all 0.1s ease-in-out;
-	-o-transition: all 0.1s ease-in-out;
-	-webkit-transition: all 0.1s ease-in-out;
-	transition: all 0.1s ease-in-out;
-	background-image:url('../images/flip_sub.png');
-	background-repeat:repeat-x;
-	background-position:0px -25px;
+	color:#000000;
+	background:#FFF !important;
 	font-family: "MuseoSans";
 }
 
@@ -130,10 +153,11 @@ width: 150px;
 		float: left;
 		position: fixed;
 		visibility: visible;
-		left: 0px;
-		bottom: 0px;
+		left: 1px;
+		bottom: 1px;
 		background-image: url(../images/logo.jpg);
 		background-repeat: no-repeat;
+		border:1px 0px 1px 1px solid #dd4d31 !important;
 	}
 }
 
