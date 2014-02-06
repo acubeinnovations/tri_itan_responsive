@@ -173,13 +173,16 @@ $(function(){
 
 	function change_slide_positions(){
 	//$(".swiper-slide-horizontal").removeAttr("style");
+	
 	var outer_container = $("#swiper-container-horizontal");
+	
 	oc_offset=outer_container.offset();
 
 	window_width = $( window ).width();
 	window_height = $( window ).height();
-	oc_top = 0;
-	oc_left = 0;
+	oc_top = oc_offset.top;
+	oc_left = oc_offset.left;
+
 	container_width = $("#swiper-container-horizontal").width();
 
 	var outer_pagination = $(".pagination");
@@ -194,53 +197,57 @@ $(function(){
 	//alert(container_width);
 
 
-	if(window_width <= 1600){
-		oc_left = 0;
-	}
-	if(window_width <= 1366){
-		oc_left = -100;
-	}
-	if(window_width <= 1200){
-		oc_left = -300;
-	}
-	if(window_width <= 1024){
-		oc_left = -350;
-	}
-
-	if(window_width <= 800){
-		oc_left = -400;
+//	if(window_width <= 1600){
+//		oc_left = 0;
+//	}
+//	if(window_width <= 1366){
+//		oc_left = -100;
+//	}
+//	if(window_width <= 1200){
+//		oc_left = -300;
+//	}
+//	if(window_width <= 1024){
+//		oc_left = -350;
+//	}
+// 
+//	if(window_width <= 800){
+//		oc_left = -400;
+//	}
+	
+//	if(window_width <= 700){
+//		oc_left = -430;
+//	}
+//	if(window_width <= 600){
+//		oc_left = -450;
+//	}
+	
+	if(window_width <= 768){
+		oc_left += -150;
 	}
 	
-	if(window_width <= 700){
-		oc_left = -430;
-	}
-	if(window_width <= 600){
-		oc_left = -450;
-	}
-	
 
-	if(window_height <= 2000){
-		oc_top = -250;
-	}
+	//alert(oc_left);
 
 
-
-	if(window_height <= 700){
-		oc_top = -310;
-	}
-	if(window_height <= 640){
-		oc_top = -315;
-	}
-
-	if(window_height <= 623){
-		oc_top = -325;
-	}
+//	if(window_height <= 700){
+//		oc_top = -310;
+//	}
+//	if(window_height <= 640){
+//		oc_top = -315;
+//	}
+// 
+//	if(window_height <= 623){
+//		oc_top = -325;
+//	}
+//	if(window_height <= 600){
+//		oc_top = -390;
+//	}
+//	
 	if(window_height <= 600){
-		oc_top = -390;
+		oc_top += 150;
 	}
-	
-	if(window_height <= 550){
-		oc_top = -400;
+	if(window_height <= 500){
+		oc_top += 250;
 	}
 	
 	//alert(oc_left);
@@ -248,16 +255,15 @@ $(function(){
 
 
 	outer_container.offset({ top: oc_top, left: oc_left });
-
 	var active_slide = $(".swiper-slide-active>.inner");
 	as_offset = active_slide.offset();
 	var keyboard_intro = $("#keyboard-intro-home");
 	kb_intro_offset = keyboard_intro.offset();
 
-	outer_pagination.offset({ top: oc_top+360, left: as_offset.left-163 });
-	outer_pagination_vertical.offset({ top: oc_top+800, left: as_offset.left+400 });
+	outer_pagination.offset({ top: oc_top+260, left: as_offset.left-163 });
+	outer_pagination_vertical.offset({ top: oc_top+600, left: as_offset.left+300 });
 
-	keyboard_intro.offset({ top: oc_top+360, left: as_offset.left-163 });
+	keyboard_intro.offset({ top: oc_top+260, left: as_offset.left-163 });
 
 	}
 	
