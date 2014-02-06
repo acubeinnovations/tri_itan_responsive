@@ -110,7 +110,7 @@ jQuery.fn.timelinr = function(options){
 
 //slide with mouse drag-start-added by nijo
 	
-			var xPrev = 0;
+			
 			function handleMouseDown(e, div_slide_this){
 			if (e.button == 0){
 			var page_pos=e.pageX;
@@ -146,6 +146,7 @@ jQuery.fn.timelinr = function(options){
 			});
 		
 		$("#dates").on('dragstart', function(event) { $('.slide-link').draggable( "destroy" );});
+
 function nextSlide(e){
 	//e.preventDefault();
 			// bugixed from 0.9.54: now the dates gets centered when there's too much dates.
