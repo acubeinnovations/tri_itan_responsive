@@ -6,14 +6,18 @@ var main = {
 			debug: true
 		});
 		
+		var window_width = $(window).width();
+		var window_height = $(window).height();
+		
 		$('#my-horizontal-list, #my-list').hoverscroll({
-			height: 850,
+			width: window_width+80,
+			height: 780,
             fixedArrows: true
 		});
 		$('#my-vertical-list').hoverscroll({
 			vertical: true,
-			width: 1366,
-			height: 900,
+			width: 1600,
+			height: window_height+90,
             fixedArrows: true
 		});
 //        $("#my-horizontal-list")[0].startMoving(1, 5);
