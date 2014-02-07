@@ -235,7 +235,7 @@
 
 
 
-
+<div id="home_hidden_elements" style="width:0px;height:0px;overflow:hidden;">
 
 
 <div class="pagination-vertical">
@@ -252,7 +252,7 @@
 <img id="keyboard-intro-home" width="318" height="42" src="images/keyboard_intro-home.gif"/>
 
 
-
+</div>
 
 
 
@@ -267,6 +267,13 @@
 	<script src="js/idangerous.swiper-2.0.min.js"></script>
 	<script src="js/home.js"></script>
 	<script src="js/copyright_reponsive.js"></script>
+	<script type="text/javascript" language="javascript" charset="utf-8">
+	// <![CDATA[
+$(document).ready(function(){
+  $("#home_hidden_elements").removeAttr("style");
+});		
+	// ]]>
+	</script>
   </body>
 </html>
 
