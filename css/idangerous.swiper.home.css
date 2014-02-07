@@ -27,7 +27,7 @@ margin:-1px -1px 2px 0px !important;
 .inner{
 	height: 1200px;
 	width: 300px;	
-	opacity: 0.1;
+	opacity: 1;
 	
 }
 
@@ -64,15 +64,15 @@ margin:-1px -1px 2px 0px !important;
 
 .swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
-	opacity: .9;
+	opacity: .5;
 }
 .swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
-	opacity: .6;
+	opacity: .3;
 }
 .swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
-	opacity: .3;
+	opacity: .1;
 }
 
 .swiper-slide-active >.inner > .swiper-container > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
