@@ -47,15 +47,13 @@ margin:-1px -1px 2px 0px !important;
 	line-height:200px;
 	text-align:center;
 	font-size:large;
-	background: -webkit-linear-gradient(left, black , white); /* For Safari */
-	background: -o-linear-gradient(right, black, white); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(right, black, white); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to right, black , white); /* Standard syntax (must be last) */
+
+
 }
 
 .inner-vertical{
 	background-color: black;
-	opacity: 0.2;
+	opacity: 0.05;
 
 }
 
@@ -65,8 +63,17 @@ margin:-1px -1px 2px 0px !important;
 }
 
 
-.swiper-slide-active > .inner > .swiper-container > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
+	opacity: .9;
+}
+.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background: black;
+	opacity: .6;
+}
+.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background: black;
+	opacity: .3;
 }
 
 
