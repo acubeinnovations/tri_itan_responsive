@@ -27,7 +27,7 @@ margin:-1px -1px 2px 0px !important;
 .inner{
 	height: 1200px;
 	width: 300px;	
-	opacity: 0.1;
+	opacity: 1;
 	
 }
 
@@ -57,25 +57,32 @@ margin:-1px -1px 2px 0px !important;
 
 }
 
-.swiper-slide-active >.inner-vertical{
-	background-color: black;
-	opacity: 1;
-}
-
-
-.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
 	opacity: .9;
 }
-.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+
+.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
-	opacity: .6;
+	opacity: .5;
 }
-.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
 	opacity: .3;
 }
+.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background: black;
+	opacity: .1;
+}
 
+.swiper-slide-active >.inner > .swiper-container > .swiper-wrapper > .swiper-slide >.inner-vertical{
+	background-color: black;
+	opacity: 0.6;
+}
+.swiper-slide-active >.inner > .swiper-container > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background-color: black;
+	opacity: 1;
+}
 
 .pagination {
 	width:164px;
@@ -87,7 +94,7 @@ margin:-1px -1px 2px 0px !important;
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	background: #000;
+	background: #494444;
 	cursor: pointer;
 	-webkit-transition: 400ms;
 	-moz-transition: 400ms;
@@ -95,13 +102,22 @@ margin:-1px -1px 2px 0px !important;
 	-o-transition: 400ms;
 	transition: 400ms;
 	margin-right:1px;
-	opacity:0.2
-}
-.swiper-active-switch {
-	background: #fff;
-	opacity:1
+	opacity:0.6
 }
 
+.swiper-pagination-switch:nth-child(2){
+background: #000;
+	opacity:0.6
+}
+.swiper-pagination-switch:nth-child(4){
+background: #000;
+	opacity:0.6
+}
+
+.swiper-active-switch {
+/*	background: #fff !important; */
+	opacity:1 !important;
+}
 
 .nav_up, .nav_down
 {
