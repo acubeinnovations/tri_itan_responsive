@@ -57,11 +57,10 @@ margin:-1px -1px 2px 0px !important;
 
 }
 
-.swiper-slide-active >.inner-vertical{
-	background-color: black;
-	opacity: 1;
+.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background: black;
+	opacity: .9;
 }
-
 
 .swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
@@ -76,6 +75,10 @@ margin:-1px -1px 2px 0px !important;
 	opacity: .3;
 }
 
+.swiper-slide-active >.inner > .swiper-container > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background-color: black;
+	opacity: 1;
+}
 
 .pagination {
 	width:164px;
