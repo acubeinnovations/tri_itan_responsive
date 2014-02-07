@@ -50,28 +50,9 @@ text-transform: capitalize !important;
 text-align:left;
 background:#eaeaea !important;
 }
-.dropdown > .dropdown-toggle a{
-	padding-top:5px !important; 
-	padding-bottom:5px !important;
-	margin:0px  !important;
-	display: block;
-	text-transform: capitalize !important;
-	color: #000 !important;
-	font-size:14px;
-	background:#eaeaea !important;
-	
-}
 
-.dropdown > .dropdown-toggle a:hover{
-
-	font-size:14px;
-	overflow: hidden;
-	color: #000 !important;
-	background:#FFF !important;
-	
-
-}
 .navbar-nav > li > a {
+	display:block;
 	padding-top:5px !important; 
 	padding-bottom:5px !important;
 	margin:0px  !important;
@@ -79,17 +60,33 @@ background:#eaeaea !important;
 	text-transform: capitalize !important;
 	color: #000 !important;
 	font-size:14px;
-	background:#eaeaea !important;
+
+	background-image:url('../images/flip.gif');
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	
 }
 
 
 .navbar-nav > li > a:hover{
-
+	display:block;
 	font-size:14px;
 	overflow: hidden;
 	color: #000 !important;
-	background:#FFF !important;
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-image:url('../images/flip.gif');
+	background-repeat:no-repeat;
+	background-position:0px -41px;
 	
 
 }
@@ -117,7 +114,6 @@ width:120px !important;
 	color:#000000;
 	font-size:12px;
 	text-decoration: none;
-	background-color: #FFFFFF;
 	padding-top: 4px;
 	padding-right: 6px;
 	padding-bottom: 4px;
@@ -127,21 +123,42 @@ width:120px !important;
 	overflow: hidden;
 	color: #000 !important;
 	font-size:12px;
-	background:#eaeaea !important;
+
 	font-family: "MuseoSans";
 	border-bottom:1px solid #dd4d31 !important;
 	border-right:1px solid #dd4d31 !important;
 	width:120px !important;
+
+	background-image:url('../images/flip_sub.png');
+	background-repeat:repeat-x;
+	background-position:0px 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
 }
+
 .dropdown-menu > li > a:hover{
+	display:block;
 	text-decoration: none;
 	margin: 0px;
 	font-size: 12px;
 	text-transform: capitalize !important;
 	overflow: hidden;
 	color:#000000;
-	background:#FFF !important;
+
 	font-family: "MuseoSans";
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-image:url('../images/flip_sub.png');
+	background-repeat:repeat-x;
+	background-position:0px -25px;
 }
 
 
