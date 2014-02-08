@@ -124,16 +124,42 @@ background: #000;
 	position: relative;
 	cursor: pointer;
 	display: block;
-    background: url(../images/jssor_arrows.png) no-repeat;
+    background: url(../images/flip_vertical_arrows.gif) no-repeat;
     overflow:hidden;
-    opacity: .4; filter:alpha(opacity=40);
+    /* opacity: .4; filter:alpha(opacity=40); */
 	z-index:5;
 	margin-bottom:1px;
 }
-.nav_up { background-position: 0px 0px; }
-.nav_down { background-position: -40px 0px; }
-.nav_up:hover { background-position: 0px 0px; opacity: .8; filter:alpha(opacity=80); }
-.nav_down:hover { background-position: -40px 0px; opacity: .8; filter:alpha(opacity=80); }
+.nav_up { background-position: 0px 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; }
+.nav_down { background-position: -38px 0px; 
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;}
+.nav_up:hover { 
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    background-position: 0px -38px; 
+    /* opacity: .8; filter:alpha(opacity=80);  */
+}
+.nav_down:hover { 
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    background-position: -38px -38px; 
+    /* opacity: .8; filter:alpha(opacity=80);  */
+}
 
 
 
