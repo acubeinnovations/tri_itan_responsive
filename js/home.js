@@ -10,7 +10,10 @@ $(function(){
 		keyboardControl: true,
 		autoResize : false,	
 		speed : 600,	
-		paginationClickable: true
+		paginationClickable: true,
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
 		
 	});
 
@@ -22,7 +25,10 @@ $(function(){
 		watchActiveIndex: true,
 		autoResize : false,
 		speed : 600,	
-		mode: 'vertical'
+		mode: 'vertical',
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
 		});
 
 	var vertical2 = new Swiper('.swiper-container-vertical-2',{
@@ -31,7 +37,10 @@ $(function(){
 		watchActiveIndex: true,
 		autoResize : false,
 		speed : 600,	
-		mode: 'vertical'
+		mode: 'vertical',
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
 		});
 
 	var vertical3 = new Swiper('.swiper-container-vertical-3',{
@@ -40,7 +49,10 @@ $(function(){
 		watchActiveIndex: true,
 		autoResize : false,
 		speed : 600,	
-		mode: 'vertical'
+		mode: 'vertical',
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
 		});
 
 
@@ -51,7 +63,10 @@ $(function(){
 		watchActiveIndex: true,
 		autoResize : false,
 		speed: 600,	
-		mode: 'vertical'
+		mode: 'vertical',
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
 		});
 
 
