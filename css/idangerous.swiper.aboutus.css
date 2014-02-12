@@ -8,7 +8,7 @@ min-width:1044px;
 min-height:900px;
 position:fixed;
 bottom:-140px;
-left:-706px;
+left:-135px;
 }
 
 .swiper-slide-horizontal {
@@ -19,7 +19,7 @@ margin:-1px -1px 1px 1px !important;
 
 .swiper-slide-vertical {
 min-width:572px;
-min-height:300px;
+min-height:452px;
 margin:-1px -1px 2px 1px !important;
 }
 
@@ -37,11 +37,12 @@ margin:-1px -1px 2px 1px !important;
 	opacity: 1;
 
 }
-
-
+.vertical-single-slide{
+margin-top:457px !important;
+}
 
 .inner-vertical{
-	height: 455px;
+	height: 452px;
 	width: 572px;
 	color:#fff;
 	line-height:200px;

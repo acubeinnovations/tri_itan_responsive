@@ -82,59 +82,59 @@
         
   <div class="arrow left" style="display: block; "></div>
   <div class="arrow right" style="display: none;"></div>
-
-
+	<div class="md-trigger" data-modal="modal-1">
+	</div>
 	<div class="outer-container">	
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+		<div class="box" id="box-1">
                  <img src="images/gold.jpg" class="img-creativity"/>
                  
-        </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+        </div>
+		<div class="box"  id="box-2">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box"  id="box-3">
                  <img src="images/gold.jpg" class="img-creativity"/>
                  
-        </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+        </div>
+		<div class="box" id="box-4">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-5">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-6">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-7">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-8">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-9">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-10">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-11">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>	
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-12">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-13">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-14">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-15">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
-		<div class="box"><div class="md-trigger" data-modal="modal-1">
+	     </div>
+		<div class="box" id="box-16">
                  <img src="images/gold.jpg" class="img-creativity"/> 
-	     </div></div>
+	     </div>
 		
 	</div>
 
@@ -165,6 +165,8 @@
  <script type="text/javascript" src="js/creativity/main.js"></script>
 	<script src="js/creativity/classie.js"></script>
 	<script src="js/creativity/modalEffects.js"></script>
+	<script src="js/creativity/flip/jquery.flip.js"></script>
+	<script src="js/creativity/flip/jquery.flip.min.js"></script>
 
 	<script>
 			// this is important for IEs
@@ -219,6 +221,64 @@
 					reponsive();
 				}
 				});
+
+				//flip
+
+				$('.box').click(function(){
+				$("#box-1").flip({
+					direction:'tb'
+				})
+				$("#box-2").flip({
+					direction:'rl'
+				})
+				$("#box-3").flip({
+					direction:'tb'
+				})
+				$("#box-4").flip({
+					direction:'rl'
+				})
+				$("#box-5").flip({
+					direction:'lr'
+				})
+				$("#box-6").flip({
+					direction:'tb'
+				})
+				$("#box-7").flip({
+					direction:'rl'
+				})
+				$("#box-8").flip({
+					direction:'bt'
+				})
+				$("#box-9").flip({
+					direction:'bt'
+				})
+				$("#box-10").flip({
+					direction:'rl'
+				})
+				$("#box-11").flip({
+					direction:'tb'
+				})
+				$("#box-12").flip({
+					direction:'rl'
+				})
+				$("#box-13").flip({
+					direction:'lr'
+				})
+				$("#box-14").flip({
+					direction:'bt'
+				})
+				$("#box-15").flip({
+					direction:'rl'
+				})
+				$("#box-16").flip({
+					direction:'tb',
+					onEnd: function(){
+						$('.md-trigger').trigger('click');
+					}
+				})
+
+				});
+	
 			});
 		</script>
 	
