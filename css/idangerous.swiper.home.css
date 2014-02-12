@@ -2,9 +2,14 @@
 .swiper-container {
 
 }
+.swiper-slide {
+
+}
+
+
 
 .swiper-container-horizontal{
-min-width:1200px;
+min-width:1500px;
 min-height:900px;
 position:fixed;
 bottom:-300px;
@@ -49,7 +54,7 @@ margin:0px 0px 0px 0px !important;
 	font-size:large;
 	margin:1px 1px 0px 0px !important;
 	background-color: black;
-	opacity: 0.05;
+	opacity: 0.01;
 
 }
 
@@ -70,6 +75,10 @@ margin:0px 0px 0px 0px !important;
 	background: black;
 	opacity: .1;
 }
+.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background: black;
+	opacity: .03;
+}
 
 .swiper-slide-active >.inner > .swiper-container > .swiper-wrapper > .swiper-slide >.inner-vertical{
 	background-color: black;
@@ -81,7 +90,7 @@ margin:0px 0px 0px 0px !important;
 }
 
 .pagination {
-	width:164px;
+	width:205px;
 	position:fixed;
 	z-index:200;
 }

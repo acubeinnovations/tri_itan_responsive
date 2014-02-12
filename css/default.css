@@ -74,24 +74,59 @@ background:#eaeaea !important;
 
 
 .navbar-nav > li > a:hover{
-	display:block !important;
-	font-size:14px !important;
-	overflow: hidden !important;
+	display:block;
+	font-size:14px;
+	overflow: hidden;
 	color: #FFF !important;
-	-webkit-transition: all 0.3s ease-in-out!important;
-	-moz-transition: all 0.3s ease-in-out!important;
-	-o-transition: all 0.3s ease-in-out !important;
-	-webkit-transition: all 0.3s ease-in-out !important;
-	transition: all 0.3s ease-in-out !important;
-	background:url('../images/flip.gif') !important;
-	background-repeat:no-repeat !important;
-	background-position:0px -41px !important;
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-image:url('../images/flip.gif');
+	background-repeat:no-repeat;
+	background-position:0px -41px;
 	
 
 }
 
 .menu-active{
-	background:#fff !important;
+	padding-top:5px !important; 
+	padding-bottom:5px !important;
+	margin:0px  !important;
+	display: block  !important;
+	text-transform: capitalize !important;
+	color: #000 !important;
+	font-size:14px !important;
+
+	background-image:url('../images/flip_white.gif') !important;
+	background-repeat:no-repeat !important;
+	background-position:0px 0px !important;
+	-webkit-transition: all 0.3s ease-in-out !important;
+	-moz-transition: all 0.3s ease-in-out !important;
+	-o-transition: all 0.3s ease-in-out !important;
+	-webkit-transition: all 0.3s ease-in-out !important;
+	transition: all 0.3s ease-in-out !important;
+}
+
+
+.menu-active:hover{
+	display:block !important;
+	font-size:14px !important;
+	overflow: hidden !important;
+	color: #FFF !important !important;
+
+	-webkit-transition: all 0.3s ease-in-out !important;
+	-moz-transition: all 0.3s ease-in-out !important;
+	-o-transition: all 0.3s ease-in-out !important;
+	-webkit-transition: all 0.3s ease-in-out !important;
+	transition: all 0.3s ease-in-out !important;
+	background-image:url('../images/flip_white.gif') !important;
+	background-repeat:no-repeat !important;
+	background-position:0px -41px !important;
+	
+
 }
 
 
