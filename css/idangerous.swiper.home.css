@@ -111,9 +111,14 @@ background: #000;
 }
 
 .swiper-active-switch {
-/*	background: #fff !important; */
+	background: #fff !important;
 	opacity:1 !important;
 }
+.swiper-pagination-switch:hover {
+	background: #fff !important;
+	opacity:1 !important;
+}
+
 
 .nav_up, .nav_down
 {
