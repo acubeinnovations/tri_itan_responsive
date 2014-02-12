@@ -74,26 +74,27 @@ background:#eaeaea !important;
 
 
 .navbar-nav > li > a:hover{
-	display:block;
-	font-size:14px;
-	overflow: hidden;
+	display:block !important;
+	font-size:14px !important;
+	overflow: hidden !important;
 	color: #FFF !important;
-
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	background-image:url('../images/flip.gif');
-	background-repeat:no-repeat;
-	background-position:0px -41px;
+	-webkit-transition: all 0.3s ease-in-out!important;
+	-moz-transition: all 0.3s ease-in-out!important;
+	-o-transition: all 0.3s ease-in-out !important;
+	-webkit-transition: all 0.3s ease-in-out !important;
+	transition: all 0.3s ease-in-out !important;
+	background:url('../images/flip.gif') !important;
+	background-repeat:no-repeat !important;
+	background-position:0px -41px !important;
 	
 
 }
 
-.menu_active{
+.menu-active{
 	background:#fff !important;
 }
+
+
 .dropdown-menu{
 padding:0px !important;
 bottom:29px !important;
