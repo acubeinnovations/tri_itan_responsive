@@ -5,7 +5,7 @@ $(function(){
         cssWidthAndHeight: false,
 		pagination:'.pagination',
 		centeredSlides: true,
-		slidesPerView: 4,
+		slidesPerView: 5,
 		watchActiveIndex: true,
 		keyboardControl: true,
 		autoResize : false,	
@@ -70,6 +70,19 @@ $(function(){
 		});
 
 
+	var vertical5 = new Swiper('.swiper-container-vertical-5',{
+		centeredSlides: true,
+		slidesPerView: 3,
+		watchActiveIndex: true,
+		autoResize : false,
+		speed: 600,	
+		mode: 'vertical',
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
+		});
+
+
 
 
 
@@ -100,6 +113,9 @@ $(function(){
 				case 4:
 				  vertical4.swipeNext();
 				  break;
+				case 5:
+				  vertical5.swipeNext();
+				  break;
 				}
 				toggle_vertical_nav();
 			} else if (code == 38) {
@@ -117,6 +133,9 @@ $(function(){
 				  break;
 				case 4:
 				  vertical4.swipePrev();
+				  break;
+				case 5:
+				  vertical5.swipePrev();
 				  break;
 				}
 				toggle_vertical_nav();
@@ -143,6 +162,9 @@ $(function(){
 				case 4:
 				  vertical4.swipePrev();
 				  break;
+				case 5:
+				  vertical5.swipePrev();
+				  break;
 				}
 				toggle_vertical_nav();
 		});
@@ -162,6 +184,9 @@ $(function(){
 				  break;
 				case 4:
 				  vertical4.swipeNext();
+				  break;
+				case 5:
+				  vertical5.swipeNext();
 				  break;
 				}
 				toggle_vertical_nav();
@@ -187,6 +212,9 @@ $(function(){
 			  break;
 			case 4:
 			  v_slide_acive = vertical4.activeIndex + 1;
+			  break;
+			case 5:
+			  v_slide_acive = vertical5.activeIndex + 1;
 			  break;
 			}
 
@@ -238,7 +266,7 @@ $(function(){
 	window_height = $( window ).height();
 	oc_top = oc_offset.top;
 	oc_left = oc_offset.left;
-
+	oc_left += -150;
 	container_width = $("#swiper-container-horizontal").width();
 
 	var outer_pagination = $(".pagination");
@@ -278,9 +306,10 @@ $(function(){
 //	}
 	
 	if(window_width <= 768){
-		oc_left += -150;
+		oc_left += -95;
 	}
 	
+
 
 	//alert(oc_left);
 
@@ -316,7 +345,7 @@ $(function(){
 	var keyboard_intro = $("#keyboard-intro-home");
 	kb_intro_offset = keyboard_intro.offset();
 
-	outer_pagination.offset({ top: oc_top+260, left: as_offset.left-164 });
+	outer_pagination.offset({ top: oc_top+260, left: as_offset.left-205 });
 	outer_pagination_vertical.offset({ top: oc_top+601, left: as_offset.left+301 });
 
 	keyboard_intro.offset({ top: oc_top+260, left: as_offset.left-163 });
