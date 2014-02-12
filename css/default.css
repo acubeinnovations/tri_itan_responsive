@@ -37,7 +37,7 @@ min-height:30px !important;
 padding:0px  !important;
 margin:0px  !important;
 border:1px solid #dd4d31 !important;
-background:#eaeaea !important;
+background:#c8c8c8 !important;
 }
 
 .navbar-nav > li{
@@ -91,7 +91,9 @@ background:#eaeaea !important;
 
 }
 
-
+.menu_active{
+	background:#fff !important;
+}
 .dropdown-menu{
 padding:0px !important;
 bottom:30px !important;
