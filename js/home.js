@@ -10,7 +10,10 @@ $(function(){
 		keyboardControl: true,
 		autoResize : false,	
 		speed : 600,	
-		paginationClickable: true
+		paginationClickable: true,
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
 		
 	});
 
@@ -22,7 +25,10 @@ $(function(){
 		watchActiveIndex: true,
 		autoResize : false,
 		speed : 600,	
-		mode: 'vertical'
+		mode: 'vertical',
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
 		});
 
 	var vertical2 = new Swiper('.swiper-container-vertical-2',{
@@ -31,7 +37,10 @@ $(function(){
 		watchActiveIndex: true,
 		autoResize : false,
 		speed : 600,	
-		mode: 'vertical'
+		mode: 'vertical',
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
 		});
 
 	var vertical3 = new Swiper('.swiper-container-vertical-3',{
@@ -40,7 +49,10 @@ $(function(){
 		watchActiveIndex: true,
 		autoResize : false,
 		speed : 600,	
-		mode: 'vertical'
+		mode: 'vertical',
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
 		});
 
 
@@ -51,7 +63,10 @@ $(function(){
 		watchActiveIndex: true,
 		autoResize : false,
 		speed: 600,	
-		mode: 'vertical'
+		mode: 'vertical',
+		onSlideChangeEnd: function(swiper){
+		  toggle_vertical_nav();
+		}
 		});
 
 
@@ -65,8 +80,10 @@ $(function(){
 			var code = (e.keyCode ? e.keyCode : e.which);
 			if (code == 37) {
 				horizontal_slide.swipePrev();
+				toggle_vertical_nav();
 			} else if (code == 39) {
 				horizontal_slide.swipeNext();
+				toggle_vertical_nav();
 			}else if (code == 40) {
 				v_slide =horizontal_slide.activeIndex + 1;
 				switch(v_slide)
@@ -84,6 +101,7 @@ $(function(){
 				  vertical4.swipeNext();
 				  break;
 				}
+				toggle_vertical_nav();
 			} else if (code == 38) {
 				v_slide =horizontal_slide.activeIndex + 1;
 				switch(v_slide)
@@ -101,6 +119,7 @@ $(function(){
 				  vertical4.swipePrev();
 				  break;
 				}
+				toggle_vertical_nav();
 			}
 
 
@@ -125,7 +144,7 @@ $(function(){
 				  vertical4.swipePrev();
 				  break;
 				}
-
+				toggle_vertical_nav();
 		});
 
 		$('.nav_down').click(function(){
@@ -145,12 +164,49 @@ $(function(){
 				  vertical4.swipeNext();
 				  break;
 				}
+				toggle_vertical_nav();
 		});
 
+		$('.swiper-pagination-switch').click(function(){
+				toggle_vertical_nav();
+		});
+
+		function toggle_vertical_nav(){
+			v_slide =horizontal_slide.activeIndex + 1;
+			v_slide_acive = 1;
+			switch(v_slide)
+			{
+			case 1:
+			  v_slide_acive = vertical1.activeIndex + 1;
+			  break;
+			case 2:
+			  v_slide_acive = vertical2.activeIndex + 1;
+			  break;
+			case 3:
+			  v_slide_acive = vertical3.activeIndex + 1;
+			  break;
+			case 4:
+			  v_slide_acive = vertical4.activeIndex + 1;
+			  break;
+			}
+
+			if (v_slide_acive == 1){
+				 $('.nav_up').fadeTo( "fast", 0.2 );
+			}else{
+				 $('.nav_up').fadeTo( "fast", 1 );
+			}
+			if (v_slide_acive == 3){
+				 $('.nav_down').fadeTo( "fast", 0.2 );
+			}else{
+				 $('.nav_down').fadeTo( "fast", 1 );
+			}
 
 
 
 
+		}
+
+		toggle_vertical_nav();
 
         if (document.cookie.indexOf("visited") >= 0) {
             //Don't open any pop up here... You can do something here
@@ -260,8 +316,8 @@ $(function(){
 	var keyboard_intro = $("#keyboard-intro-home");
 	kb_intro_offset = keyboard_intro.offset();
 
-	outer_pagination.offset({ top: oc_top+260, left: as_offset.left-163 });
-	outer_pagination_vertical.offset({ top: oc_top+600, left: as_offset.left+300 });
+	outer_pagination.offset({ top: oc_top+260, left: as_offset.left-164 });
+	outer_pagination_vertical.offset({ top: oc_top+601, left: as_offset.left+301 });
 
 	keyboard_intro.offset({ top: oc_top+260, left: as_offset.left-163 });
 

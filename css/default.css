@@ -37,7 +37,7 @@ min-height:30px !important;
 padding:0px  !important;
 margin:0px  !important;
 border:1px solid #dd4d31 !important;
-background:#eaeaea !important;
+background:#c8c8c8 !important;
 }
 
 .navbar-nav > li{
@@ -74,33 +74,40 @@ background:#eaeaea !important;
 
 
 .navbar-nav > li > a:hover{
-	display:block;
-	font-size:14px;
-	overflow: hidden;
-	color: #000 !important;
-
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	background-image:url('../images/flip.gif');
-	background-repeat:no-repeat;
-	background-position:0px -41px;
+	display:block !important;
+	font-size:14px !important;
+	overflow: hidden !important;
+	color: #FFF !important;
+	-webkit-transition: all 0.3s ease-in-out!important;
+	-moz-transition: all 0.3s ease-in-out!important;
+	-o-transition: all 0.3s ease-in-out !important;
+	-webkit-transition: all 0.3s ease-in-out !important;
+	transition: all 0.3s ease-in-out !important;
+	background:url('../images/flip.gif') !important;
+	background-repeat:no-repeat !important;
+	background-position:0px -41px !important;
 	
 
+}
+
+.menu-active{
+	background:#fff !important;
 }
 
 
 .dropdown-menu{
 padding:0px !important;
-bottom:30px !important;
+bottom:29px !important;
+left:0px;
 color: #000 !important;
 background:#eaeaea !important;
 padding:0px !important;
 margin:0px !important;
 min-width:120px !important;
 width:120px !important;
+z-index: -1; 
+	border-top:1px solid #dd4d31 !important;
+	border-left:1px solid #dd4d31 !important;	
 }
 .dropdown-menu > li{
 	margin:0px !important;
@@ -121,7 +128,7 @@ width:120px !important;
 	margin: 0px;
 	text-transform: capitalize !important;
 	overflow: hidden;
-	color: #000 !important;
+	
 	font-size:12px;
 
 	font-family: "MuseoSans";
@@ -147,7 +154,7 @@ width:120px !important;
 	font-size: 12px;
 	text-transform: capitalize !important;
 	overflow: hidden;
-	color:#000000;
+	color:#FFF;
 
 	font-family: "MuseoSans";
 
