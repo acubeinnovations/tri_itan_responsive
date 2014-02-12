@@ -1,0 +1,172 @@
+
+.swiper-container {
+
+}
+
+.swiper-container-horizontal{
+min-width:1044px;
+min-height:900px;
+position:fixed;
+bottom:-140px;
+left:-706px;
+}
+
+.swiper-slide-horizontal {
+min-width:572px;
+min-height:900px;
+margin:-1px -1px 1px 1px !important;
+}
+
+.swiper-slide-vertical {
+min-width:572px;
+min-height:300px;
+margin:-1px -1px 2px 1px !important;
+}
+
+
+.inner{
+	height: 1200px;
+	width: 572px;	
+	opacity: 1;
+	
+}
+
+.swiper-slide-active .inner{
+	height: 900px;
+	width: 572px;
+	opacity: 1;
+
+}
+
+
+
+.inner-vertical{
+	height: 455px;
+	width: 572px;
+	color:#fff;
+	line-height:200px;
+	text-align:center;
+	font-size:large;
+
+
+}
+
+.inner-vertical{
+	background-color: black;
+	opacity: 0.05;
+
+}
+
+.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background: black;
+	opacity: .9;
+}
+
+.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background: black;
+	opacity: .5;
+}
+.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background: black;
+	opacity: .3;
+}
+.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background: black;
+	opacity: .1;
+}
+
+.swiper-slide-active >.inner > .swiper-container > .swiper-wrapper > .swiper-slide >.inner-vertical{
+	background-color: black;
+	opacity: 0.6;
+}
+.swiper-slide-active >.inner > .swiper-container > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
+	background-color: black;
+	opacity: 1;
+}
+
+.pagination {
+	width:164px;
+	position:fixed;
+	z-index:200;
+}
+.swiper-pagination-switch {
+	vertical-align: middle;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #494444;
+	cursor: pointer;
+	-webkit-transition: 400ms;
+	-moz-transition: 400ms;
+	-ms-transition: 400ms;
+	-o-transition: 400ms;
+	transition: 400ms;
+	margin-right:1px;
+	opacity:0.6
+}
+
+.swiper-pagination-switch:nth-child(2){
+background: #000;
+	opacity:0.6
+}
+.swiper-pagination-switch:nth-child(4){
+background: #000;
+	opacity:0.6
+}
+
+.swiper-active-switch {
+/*	background: #fff !important; */
+	opacity:1 !important;
+}
+
+.nav_up, .nav_down
+{
+	position: relative;
+	cursor: pointer;
+	display: block;
+    background: url(../images/flip_vertical_arrows.gif) no-repeat;
+    overflow:hidden;
+    /* opacity: .4; filter:alpha(opacity=40); */
+	z-index:5;
+	margin-bottom:1px;
+}
+.nav_up { background-position: 0px 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; }
+.nav_down { background-position: -38px 0px; 
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;}
+.nav_up:hover { 
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    background-position: 0px -38px; 
+    /* opacity: .8; filter:alpha(opacity=80);  */
+}
+.nav_down:hover { 
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    background-position: -38px -38px; 
+    /* opacity: .8; filter:alpha(opacity=80);  */
+}
+
+
+
+#swiper_nav{ 
+height:282px;width:50px; 
+}
+
+#keyboard-intro-home{
+z-index:30;
+}
