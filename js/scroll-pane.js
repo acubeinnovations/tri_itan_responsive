@@ -4,15 +4,13 @@ var scrollPane = $( ".scroll-pane" ),
 scrollContent = $( ".scroll-content" );
 //build slider
 var scrollbar = $( ".scroll-bar" ).slider({
-slide: function( event, ui ) {
-if ( scrollContent.width() > scrollPane.width() ) {
-scrollContent.css( "margin-left", Math.round(
-ui.value / 100 * ( scrollPane.width() - scrollContent.width() )
-) + "px" );
-} else {
-scrollContent.css( "margin-left", 0 );
-}
-}
+	slide: function( event, ui ) {
+		if ( scrollContent.width() > scrollPane.width() ) {
+			scrollContent.css( "margin-left", Math.round(ui.value / 100 * ( scrollPane.width() - scrollContent.width())) + "px" );
+		} else {
+			scrollContent.css( "margin-left", 0 );
+		}
+	}
 });
 //append icon to handle
 var handleHelper = scrollbar.find( ".ui-slider-handle" )
@@ -64,15 +62,3 @@ reflowContent();
 setTimeout( sizeScrollbar, 10 );//safari wants a timeout
 });
 
-
-
-$(document).ready(function(){
-  $(".scroll-content-item").click(function(){
-   	$(".swiper-container-outer").show();
-   	$("#swiper_nav_outer").show();
-	var str_content = $(this).html();
-	$("#first-slide").html(str_content);
-	$("#second-slide").html(str_content);
-	$("#third-slide").html(str_content);
-  });
-});
