@@ -123,7 +123,7 @@ background:#eaeaea !important;
 	-o-transition: all 0.3s ease-in-out !important;
 	-webkit-transition: all 0.3s ease-in-out !important;
 	transition: all 0.3s ease-in-out !important;
-	background-image:url('../../images/flip_white.gif') !important;
+	background-image:url('../images/flip_white.gif') !important;
 	background-repeat:no-repeat !important;
 	background-position:0px -41px !important;
 	
@@ -221,7 +221,7 @@ width: 150px;
 		visibility: visible;
 		left: 1px;
 		bottom: 1px;
-		background-image: url(../../images/logo.jpg);
+		background-image: url(../images/logo.jpg);
 		background-repeat: no-repeat;
 		border:1px 0px 1px 1px solid #231F20 !important;
 	}
