@@ -18,9 +18,10 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 
     <!-- Swiper -->
-  
+    <link href="css/idangerous.swiper.css" rel="stylesheet">
+
 	<!-- default for all pages -->
-    <link href="css/default-black.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
 	<!-- css for contactus pages -->
 	<link  href="css/contactus.css" rel="stylesheet">
 
@@ -64,73 +65,85 @@
 
 
 
-	
 
 
-		 <div id="map1"></div> <div id="map"></div><br>
-			<div id="address-container">		
-				 <table id="address-table">
-					<tr>
-						<td width="44%">	
-							<table id="address-dubai" width="100%">
-								<tr>
-									<td width="50%"">	
-										<span id="title_head">Dubai Office</span><br>
-										Phone +97 123 4567890
-									</td>
-									<td width="50%">	
-										<span id="title_head">ITAN JEWELS DMCC</span><br>
-										333A  Street,<br>
-										Dubai, DC 20007<br>
-										
-									</td>
-								</tr>
-							 </table>
-						</td>
-						<td width="56%">	
-							<table id="address-mumbai" width="100%">
-								<tr>
-									<td width="50%">	
-										<span id="title_head">Mumbai Office</span><br>
-										Phone +91 22 2494 2222	
-									</td>
-									<td width="50%">	
-										<span id="title_head">ITAN JEWELS PVT LTD</span><br>
-										<span class="content"><strong>126 G FL,0B/DC BENEFICE</strong> BUSSINESS HOUSE <br>
-										MATHURA DAS BILL COMPOUND,NM MARG<br>
-										LOWER PARALEL WEST,MUMBAI 400 013<br></span>
-										
-									</td>
-								</tr>
-							 </table>
-						</td>
-					</tr>
-				 </table>		
+
+
+
+    <div class="container-fluid" >
+
+
+		<div id="apDiv1">
+    	<div id="contact_box_1">
+    	<br><br>
+        <span id="title1">ITAN JEWELS</span><br>
+        <span id="title2">CONTACT FORM</span><br><br>
+        <hr  class="style-six">
+        <div class="address">
+        	<span id="title_head">Dubai Office</span><br>
+            Dubai Office<br>
+			333A  Street,<br>
+			Dubai, DC 20007<br>
+			Phone +97 123 4567890
 			</div>
-   
+        <div class="address">
+        	<span id="title_head">Abudabi Office</span><br>
+            Abudabi Office<br>
+			333A  Street,<br>
+			Dubai, DC 20007<br>
+			Phone +97 123 4567890</div>
+    </div>
+
+    <div id="contact_form">
+		 <div id="contact_success">
+			<h1>MESSAGE SENT</h1><br>
+			<strong>Thank you for contacting us. We will be in touch soon.<br><br><a href="index.htm" style="text-decoration:none;">Go To Home</strong></a>
+		 </div>
+		 <div id="contact_send">
+			 <table id="contact-table" border="0" cellpadding="4" cellspacing="4" align="center">
+			 <tr>
+			 <td>Name</td>
+			 <td><input type="text" name="name" id="name" class="text"></td>
+			 </tr>
+			  <tr>
+			 <td>Company (optional)</td>
+			 <td><input type="text" name="company" id="company" class="text"></td>
+			 </tr>
+			  <tr>
+			 <td>Your email address</td>
+			 <td><input type="text" name="email" id="email" class="text"></td>
+			 </tr>
+			  <tr>
+			 <td valign="top">Message</td>
+			 <td><textarea name="message" id="message" class="textarea"></textarea></td>
+			 </tr>
+			  <tr>
+			 <td>&nbsp;</td>
+			 <td><input type="button"  id="submit" class="sendmsg" value="SEND MESSAGE" ></td>
+			 </tr>
+			 </table>
+		</div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+    </div> <!-- /container -->
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/google.map.jquery.js"></script>
+	<script src="js/idangerous.swiper-2.0.min.js"></script>
+	<script type="text/javascript" src="js/contactus.js"></script>
 	<script src="js/copyright_reponsive.js"></script>
-	<script>
-	$(function(){ 
-	window_width=$(window).width();
-	window_height=$(window).height();
-	map_width=window_width/2;
-	map_height=window_height-150;
-	$('#map').css('width',map_width);
-	$('#map1').css('width',map_width);
-	$('#map').css('height',map_height);
-	$('#map1').css('height',map_height);
-	$('#address-container').css('top',map_height);
-	$('#address-table').css('width',window_width-170);
-	});
-	</script>
   </body>
 </html>
 
