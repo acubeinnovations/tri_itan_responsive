@@ -60,29 +60,29 @@ margin:0px 0px 0px 0px !important;
 
 .swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
-	opacity: .9;
+	opacity: 1;
 }
 
 .swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
-	opacity: .5;
+	opacity: .8;
 }
 .swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
-	opacity: .3;
+	opacity: .6;
 }
 .swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
-	opacity: .1;
+	opacity: .4;
 }
 .swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background: black;
-	opacity: .03;
+	opacity: .2;
 }
 
 .swiper-slide-active >.inner > .swiper-container > .swiper-wrapper > .swiper-slide >.inner-vertical{
 	background-color: black;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 .swiper-slide-active >.inner > .swiper-container > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
 	background-color: black;
