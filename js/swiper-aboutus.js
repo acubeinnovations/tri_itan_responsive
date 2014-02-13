@@ -218,8 +218,8 @@ $(function(){
 		function change_arrow_pos(){
 		var window_height=$( window ).height();
 		var hor_oc_top=window_height-642;
-		$("#arrow_bg").css('top',hor_oc_top+1);
-		var ver_oc_top=window_height-147;
+		$("#arrow_bg").css('top',hor_oc_top);
+		var ver_oc_top=window_height-150;
 		var ver_oc_left=708;
 		$(".pagination-vertical").css('padding-top',ver_oc_top);
 		$(".pagination-vertical").css('margin-left',ver_oc_left);
@@ -250,6 +250,7 @@ $(function(){
 
 	//change_slide_positions();
 	var zoom = $( window ).width();
+	
 	$(window).resize(function() {
 		var zoomNew = $( window ).width();
 
