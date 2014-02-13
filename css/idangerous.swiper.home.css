@@ -97,8 +97,8 @@ margin:0px 0px 0px 0px !important;
 .swiper-pagination-switch {
 	vertical-align: middle;
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	background: #494444;
 	cursor: pointer;
 	-webkit-transition: 400ms;
@@ -106,7 +106,7 @@ margin:0px 0px 0px 0px !important;
 	-ms-transition: 400ms;
 	-o-transition: 400ms;
 	transition: 400ms;
-	margin-right:1px;
+	margin:0px;
 	opacity:0.6
 }
 

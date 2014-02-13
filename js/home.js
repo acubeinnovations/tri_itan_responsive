@@ -308,6 +308,17 @@ $(function(){
 	if(window_width <= 768){
 		oc_left += -95;
 	}
+	if(window_width <= 600){
+		oc_left += -40;
+	}
+	
+	if(window_width <= 480){
+		oc_left += -40;
+	}
+	
+	if(window_width <= 320){
+		oc_left += -123;
+	}
 	
 
 
@@ -329,10 +340,13 @@ $(function(){
 //	}
 //	
 	if(window_height <= 600){
-		oc_top += 150;
+		oc_top += 30;
 	}
 	if(window_height <= 500){
-		oc_top += 250;
+		oc_top += 120;
+	}
+	if(window_height <= 320){
+		oc_top += 160;
 	}
 	
 	//alert(oc_left);
@@ -345,10 +359,10 @@ $(function(){
 	var keyboard_intro = $("#keyboard-intro-home");
 	kb_intro_offset = keyboard_intro.offset();
 
-	outer_pagination.offset({ top: oc_top+260, left: as_offset.left-205 });
-	outer_pagination_vertical.offset({ top: oc_top+601, left: as_offset.left+301 });
+	outer_pagination.offset({ top: oc_top+271, left: as_offset.left-150 });
+	outer_pagination_vertical.offset({ top: oc_top+601, left: as_offset.left+300 });
 
-	keyboard_intro.offset({ top: oc_top+260, left: as_offset.left-205 });
+	keyboard_intro.offset({ top: oc_top+271, left: as_offset.left-150 });
 
 	}
 	
@@ -364,7 +378,7 @@ $(function(){
 		if (zoom != zoomNew) {
 			//alert (zoom);
 			//alert (zoomNew);
-			change_slide_positions();
+			//change_slide_positions();
 		}
 	});
 

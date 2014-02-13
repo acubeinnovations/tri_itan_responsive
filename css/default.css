@@ -59,7 +59,7 @@ background:#eaeaea !important;
 	display: block;
 	text-transform: capitalize !important;
 	color: #000 !important;
-	font-size:14px;
+	font-size:11px;
 
 	background-image:url('../images/flip.gif');
 	background-repeat:no-repeat;
@@ -75,7 +75,7 @@ background:#eaeaea !important;
 
 .navbar-nav > li > a:hover{
 	display:block;
-	font-size:14px;
+	font-size:11 px;
 	overflow: hidden;
 	color: #FFF !important;
 
@@ -98,7 +98,7 @@ background:#eaeaea !important;
 	display: block  !important;
 	text-transform: capitalize !important;
 	color: #000 !important;
-	font-size:14px !important;
+	font-size:11px !important;
 
 	background-image:url('../images/flip_white.gif') !important;
 	background-repeat:no-repeat !important;
@@ -113,7 +113,7 @@ background:#eaeaea !important;
 
 .menu-active:hover{
 	display:block !important;
-	font-size:14px !important;
+	font-size:11px !important;
 	overflow: hidden !important;
 	color: #FFF !important !important;
 
