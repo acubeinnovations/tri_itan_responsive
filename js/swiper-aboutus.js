@@ -1,6 +1,13 @@
 $(function(){
+		var web_address=$(location).attr('href');
+		var slide_index= web_address.match(/#(.*?)#/);
+		if(slide_index==null){
+		slide_preview_index=1;
+		}else{
+		slide_preview_index=slide_index[1];
+		}
 		$('#prev').fadeTo( "fast", 0.2 );
-		 $('.nav_up').fadeTo( "fast", 0.2 );
+		$('.nav_up').fadeTo( "fast", 0.2 );
 		$('.nav_down').fadeTo( "fast", 0.2 );
 	var horizontal_slide = new Swiper('.swiper-container-horizontal',{
         calculateHeight: false,
@@ -8,10 +15,12 @@ $(function(){
 		pagination:'.pagination',
 		centeredSlides: true,
 		slidesPerView: 2,
+		initialSlide: slide_preview_index,
 		watchActiveIndex: true,
 		keyboardControl: true,
 		autoResize : false,	
-		speed : 600,	
+		speed : 600,
+			
 		paginationClickable: true,
 		onSlideChangeStart: function(swiper){
 		  h_slide =horizontal_slide.activeIndex;
@@ -66,7 +75,19 @@ $(function(){
 			}
 		}
 		});
-
+		
+		$('#team').click(function(){
+		horizontal_slide.swipePrev();
+		
+		$('#next').fadeTo('fast',1);
+		$('#prev').fadeTo('fast',0.2);
+		});
+		$('#legacy').click(function(){
+		horizontal_slide.swipeNext();
+		
+		$('#next').fadeTo('fast',0.2);
+		$('#prev').fadeTo('fast',1);
+		});
 		$('#next').click(function(){
 		
 		horizontal_slide.swipeNext();
