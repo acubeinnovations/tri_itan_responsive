@@ -348,7 +348,7 @@ $(function(){
 	outer_pagination.offset({ top: oc_top+260, left: as_offset.left-205 });
 	outer_pagination_vertical.offset({ top: oc_top+601, left: as_offset.left+301 });
 
-	keyboard_intro.offset({ top: oc_top+260, left: as_offset.left-163 });
+	keyboard_intro.offset({ top: oc_top+260, left: as_offset.left-205 });
 
 	}
 	
