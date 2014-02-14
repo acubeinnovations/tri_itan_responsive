@@ -23,6 +23,9 @@ body {
 	width:315px;
 	height:215px;
 	float:left;
+	background-repeat:no-repeat !important;
+	background-position: center !important;
+
 }
 #info{
  background:#ccc; color:#000 !important;
@@ -38,3 +41,5 @@ body {
 	color:#000 !important;
 	font-family: "MuseoSans" !important;
 }
+
+

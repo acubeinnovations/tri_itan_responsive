@@ -7,11 +7,15 @@ var scrollbar = $( ".scroll-bar" ).slider({
 	slide: function( event, ui ) {
 		if ( scrollContent.width() > scrollPane.width() ) {
 			scrollContent.css( "margin-left", Math.round(ui.value / 100 * ( scrollPane.width() - scrollContent.width())) + "px" );
+			$(".choose_product").hide();
 		} else {
 			scrollContent.css( "margin-left", 0 );
+			$(".choose_product").hide();
 		}
 	}
 });
+
+
 //append icon to handle
 var handleHelper = scrollbar.find( ".ui-slider-handle" )
 .mousedown(function() {
@@ -34,7 +38,7 @@ var handleSize = scrollPane.width() - ( proportion * scrollPane.width() );
 scrollbar.find( ".ui-slider-handle" ).css({
 width: handleSize,
 "margin-left": -handleSize / 2,
-left: ((window_width/2)-(handle_width/2)) - (handleSize / 2),
+left: "50%",
 outline: 0
 });
 handleHelper.width( "" ).width( scrollbar.width() - handleSize );
@@ -63,5 +67,12 @@ reflowContent();
 });
 //init scrollbar size
 setTimeout( sizeScrollbar, 10 );//safari wants a timeout
+// keep slider center
+var scroll_content_width = $( ".scroll-content" ).width();
+var window_width = $(window).width();
+
+var margin_left = (scroll_content_width/2)- (window_width/2)-150;
+$(".scroll-content" ).attr( "style", "margin-left: -"+margin_left+"px;" );
+
 });
 

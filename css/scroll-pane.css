@@ -6,7 +6,7 @@ overflow:hidden;
 }
 .ui-widget-content{border:0px;}
 
-.scroll-content { min-width: 4095px; float: left; height: 75px; display:inline-block;   }
+.scroll-content { min-width: 4410px; float: left; height: 75px; display:inline-block; background:#ccc !important;   }
 .scroll-content-item { 
 cursor: pointer; 
 width: 315px; 
