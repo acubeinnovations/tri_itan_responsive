@@ -17,10 +17,12 @@
 }
 #map1 {
 	float:left;
-	border:1px solid black;
+	border-left:1px solid black;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
 }
 
-hr.style-six { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+hr.style-six { border: 0; height: 0; border-top: 1px solid #fff; border-bottom: 1px solid #fff; }
 #title_head {
 	font-family: "MuseoSans-100";
 	font-size: 15px;
@@ -38,15 +40,23 @@ float:left;
 bottom:0px;
 
 }
-
+#address-table td:nth-child(1){
+    
+	
+}
+#address-dubai tr td:nth-child(2){
+    
+ text-align:left;   
+}
 #address-table {
 color:#fff;
 height:150px;
 text-align:right;
 }
-#address-dubai td{
+#address-dubai tr td:nth-child(3){
 text-align:right;
 vertical-align:top;
+padding-right:20px !important;
 }
 td{
 vertical-align:top;
@@ -56,28 +66,19 @@ padding-top:10px;
 text-align:right;
 vertical-align:top;
 }
+#address-mumbai tr td:nth-child(3){
+text-align:right;
+vertical-align:top;
+padding-right:20px !important;
+}
+#address-mumbai tr td:nth-child(2){
+    
+ text-align:left;   
+}
 #address-container{
 height:150px;
 }
 #name-email-number-dubai{
 width:50%;
 }
-.address1{
-	top:0px;
-	color:#999999;
-	width:50%;
-	float:left;
-	font-size:12px;
-	font-family: "MuseoSans-100";
-}
-.address2{
-	top:0px;
-	color:#999999;
-	width:50%;
-	float:left;
-	font-size:12px;
-	font-family: "MuseoSans-100";
-}
-
-
 
