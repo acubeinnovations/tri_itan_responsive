@@ -143,7 +143,7 @@ $(function(){
 				v_slide =horizontal_slide.activeIndex + 1;
 				switch(v_slide)
 				{
-				case 1:
+				case 1:break;
 				  
 				case 2:
 					toggle_vertical_nav();
@@ -158,7 +158,7 @@ $(function(){
 				v_slide =horizontal_slide.activeIndex + 1;
 				switch(v_slide)
 				{
-				case 1:
+				case 1:break;
 				  
 				case 2:
 					toggle_vertical_nav();
