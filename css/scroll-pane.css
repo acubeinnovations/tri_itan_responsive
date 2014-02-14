@@ -1,8 +1,23 @@
-.scroll-pane { background:#000; overflow: auto; width: 100%; float:left; bottom:152px; position:fixed; z-index:200;}
+.scroll-pane { background:#000; overflow: auto; width: 100%; float:left; bottom:152px; position:fixed; z-index:200; 
+border: 1px solid black;
+border-top-color:#222222;
+border-radius:0px !important;
+overflow:hidden;
+}
 .ui-widget-content{border:0px;}
 
-.scroll-content { min-width: 4095px; float: left; height: 75px; display:inline-block;  }
-.scroll-content-item { cursor: pointer; width: 315px; height: 75px; float: left; margin: 1px 0px 0px 1px; font-size: 15px; line-height: 75px; text-align: center; background:#eaeaea; color:#000;}
+.scroll-content { min-width: 4095px; float: left; height: 75px; display:inline-block;   }
+.scroll-content-item { 
+cursor: pointer; 
+width: 315px; 
+height: 75px; float: left; 
+margin: 1px 0px 0px 1px; 
+font-family: "MuseoSans"!important;
+font-size: 14px; 
+line-height: 75px; 
+text-align: center; 
+background:#eaeaea; 
+color:#000;}
 .scroll-content-item:hover{
 	background:#ccc !important;
 	color:#000;
@@ -16,3 +31,5 @@
 .scroll-bar-wrap:hover .ui-slider-handle:hover .ui-icon:hover {
 background: url("../images/scroll-events-hover.gif") no-repeat  ;
 }
+
+

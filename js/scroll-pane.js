@@ -26,12 +26,15 @@ scrollbar.width( "100%" );
 scrollPane.css( "overflow", "hidden" );
 //size scrollbar and handle proportionally to scroll distance
 function sizeScrollbar() {
+var window_width = $(window).width();
+var handle_width = $( ".ui-slider-handle" ).width();
 var remainder = scrollContent.width() - scrollPane.width();
 var proportion = remainder / scrollContent.width();
 var handleSize = scrollPane.width() - ( proportion * scrollPane.width() );
 scrollbar.find( ".ui-slider-handle" ).css({
 width: handleSize,
 "margin-left": -handleSize / 2,
+left: ((window_width/2)-(handle_width/2)) - (handleSize / 2),
 outline: 0
 });
 handleHelper.width( "" ).width( scrollbar.width() - handleSize );
