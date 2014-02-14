@@ -4,7 +4,7 @@
 .scroll-content { min-width: 4095px; float: left; height: 75px; display:inline-block;  }
 .scroll-content-item { cursor: pointer; width: 315px; height: 75px; float: left; margin: 1px 0px 0px 1px; font-size: 15px; line-height: 75px; text-align: center; background:#eaeaea; color:#000;}
 .scroll-content-item:hover{
-	background:#eaeaea;
+	background:#ccc !important;
 	color:#000;
 
 }

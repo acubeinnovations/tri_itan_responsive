@@ -339,6 +339,10 @@ $(function(){
 //		oc_top = -390;
 //	}
 //	
+	if(window_height > 1000){
+		oc_top += -330;
+	}
+
 	if(window_height <= 600){
 		oc_top += 30;
 	}
