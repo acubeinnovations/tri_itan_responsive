@@ -4,25 +4,25 @@
 }
 
 .swiper-container-horizontal{
-min-width:1144px;
+min-width:1143px;
 min-height:900px;
 position:fixed;
 bottom:-146px;
-left:-136px;
+left:-137px;
 
 }
 
 .swiper-slide-horizontal {
 min-width:572px;
 min-height:900px;
-margin:-1px -1px 1px 1px !important;
+margin:-1px -2px 1px 1px !important;
 
 }
 
 .swiper-slide-vertical {
 min-width:572px;
 min-height:452px;
-margin:-1px 1px 1px 1px !important;
+margin:-1px 1px 1px 2px !important;
 }
 
 
