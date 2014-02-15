@@ -220,10 +220,17 @@ $(function(){
 
         }
 		function change_arrow_pos(){
-		var window_height=$( window ).height();
+		var window_height=$( window ).height();//alert(window_height);
+		var window_width = $( window ).width();//alert(window_width);
+		if(window_height=='768' && window_width=='1024'){
+		var hor_oc_top=window_height-662;
+		var ver_oc_top=window_height-170;
+		}else{
 		var hor_oc_top=window_height-642;
-		$("#arrow_bg").css('top',hor_oc_top);
 		var ver_oc_top=window_height-150;
+		}
+		$("#arrow_bg").css('top',hor_oc_top);
+		
 		var ver_oc_left=708;
 		$(".pagination-vertical").css('padding-top',ver_oc_top);
 		$(".pagination-vertical").css('margin-left',ver_oc_left);
