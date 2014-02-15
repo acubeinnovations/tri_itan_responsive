@@ -4,7 +4,7 @@
 }
 
 .swiper-container-horizontal{
-min-width:1044px;
+min-width:1144px;
 min-height:900px;
 position:fixed;
 bottom:-146px;
@@ -22,7 +22,7 @@ margin:-1px -1px 1px 1px !important;
 .swiper-slide-vertical {
 min-width:572px;
 min-height:452px;
-margin:-1px -1px 1px 1px !important;
+margin:-1px 1px 1px 1px !important;
 }
 
 
