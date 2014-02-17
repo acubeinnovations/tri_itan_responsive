@@ -13,7 +13,7 @@ var scrollbar = $( ".scroll-bar" ).slider({
 			$(".choose_product").hide();
 		}
 	}
-}).sliderAccess();
+});
 
 
 //append icon to handle
