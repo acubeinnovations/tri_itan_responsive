@@ -23,7 +23,6 @@ $(function(){
 			keyboardControl: true,
 			autoResize : false,	
 			speed : 600,
-			
 			paginationClickable: true,
 			onSlideChangeStart: function(swiper){
 			  h_slide =horizontal_slide.activeIndex;
