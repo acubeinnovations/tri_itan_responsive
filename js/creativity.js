@@ -168,7 +168,7 @@
 					$('.products-container').css('background-size','1260px 860px');
 				}
 
-			$('.products-container').click(function(){
+			$('.container-outer').click(function(){
 				$('.product-image').show();
 			});
 	
