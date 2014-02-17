@@ -12,7 +12,7 @@
 min-width:1500px;
 min-height:900px;
 position:fixed;
-bottom:-300px;
+bottom:-250px;
 left:-150px;
 }
 
@@ -100,7 +100,7 @@ margin:0px 0px 0px 0px !important;
 	width: 30px;
 	height: 30px;
 	background: #494444;
-	cursor: pointer;
+	
 	-webkit-transition: 400ms;
 	-moz-transition: 400ms;
 	-ms-transition: 400ms;
@@ -132,9 +132,10 @@ background: #000;
 .nav_up, .nav_down
 {
 	position: relative;
-	cursor: pointer;
 	display: block;
-    background: url(../images/flip_vertical_arrows.gif) no-repeat;
+	width:50px;
+	height:50px;
+    background: url(../images/flip_vertical_arrows.png) no-repeat;
     overflow:hidden;
     /* opacity: .4; filter:alpha(opacity=40); */
 	z-index:5;
@@ -146,7 +147,7 @@ background: #000;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out; }
-.nav_down { background-position: -38px 0px; 
+.nav_down { background-position: -51px 0px; 
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -158,7 +159,7 @@ background: #000;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-    background-position: 0px -38px; 
+    background-position: 0px -51px; 
     /* opacity: .8; filter:alpha(opacity=80);  */
 }
 .nav_down:hover { 
@@ -167,7 +168,7 @@ background: #000;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-    background-position: -38px -38px; 
+    background-position: -51px -51px; 
     /* opacity: .8; filter:alpha(opacity=80);  */
 }
 
