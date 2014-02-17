@@ -33,7 +33,7 @@ border-left:1px solid #dd4d31 !important;
 background:#eaeaea !important;
 }
 .navbar {
-min-height:30px !important;
+min-height:49px !important;
 padding:0px  !important;
 margin:0px  !important;
 border:1px solid #dd4d31 !important;
@@ -41,7 +41,7 @@ background:#c8c8c8 !important;
 }
 
 .navbar-nav > li{
-height:30px !important;
+height:49px !important;
 width:149px !important;
 padding:0px  !important;
 margin:0px  !important;
@@ -49,16 +49,17 @@ border-right:1px solid #dd4d31 !important;
 text-transform: capitalize !important;
 text-align:left;
 background:#eaeaea !important;
+
 }
 
 .navbar-nav > li > a {
 	display:block;
-	padding-top:5px !important; 
-	padding-bottom:5px !important;
+	height:49px !important;
+	line-height:20px;
 	margin:0px  !important;
 	display: block;
 	text-transform: capitalize !important;
-	color: #000 !important;
+	color: #505050 !important;
 	font-size:11px;
 
 	background-image:url('../images/flip.gif');
@@ -86,18 +87,19 @@ background:#eaeaea !important;
 	transition: all 0.3s ease-in-out;
 	background-image:url('../images/flip.gif');
 	background-repeat:no-repeat;
-	background-position:0px -41px;
+	background-position:0px -51px;
 	
 
 }
 
 .menu-active{
-	padding-top:5px !important; 
-	padding-bottom:5px !important;
+	display:block;
+	height:49px !important;
+	line-height:20px;
 	margin:0px  !important;
 	display: block  !important;
 	text-transform: capitalize !important;
-	color: #000 !important;
+	color: #505050 !important;
 	font-size:11px !important;
 
 	background-image:url('../images/flip_white.gif') !important;
@@ -124,7 +126,7 @@ background:#eaeaea !important;
 	transition: all 0.3s ease-in-out !important;
 	background-image:url('../images/flip_white.gif') !important;
 	background-repeat:no-repeat !important;
-	background-position:0px -41px !important;
+	background-position:0px -51px !important;
 	
 
 }
@@ -132,7 +134,7 @@ background:#eaeaea !important;
 
 .dropdown-menu{
 padding:0px !important;
-bottom:29px !important;
+bottom:48px !important;
 left:0px;
 color: #000 !important;
 background:#eaeaea !important;
@@ -153,7 +155,7 @@ z-index: -1;
 .dropdown-menu > li > a{
 	display:block;
 	height: 25px;
-	color:#000000;
+	color:#505050;
 	font-size:12px;
 	text-decoration: none;
 	padding-top: 4px;
@@ -229,11 +231,13 @@ width: 150px;
 .copy-container{
 
 	display:block;
+	
 }
 .copy{
 
 	display:block;
-	padding:5px 20px 0px 0px;
+	padding:15px 20px 0px 0px;
+	color:#505050;
 }
 
 
