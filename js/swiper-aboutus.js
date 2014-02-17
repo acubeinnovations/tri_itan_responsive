@@ -223,11 +223,11 @@ $(function(){
 		var window_height=$( window ).height();//alert(window_height);
 		var window_width = $( window ).width();//alert(window_width);
 		if(window_height=='768' && window_width=='1024'){
-		var hor_oc_top=window_height-662;
-		var ver_oc_top=window_height-170;
+			var hor_oc_top=window_height-662;
+			var ver_oc_top=window_height-170;
 		}else{
-		var hor_oc_top=window_height-642;
-		var ver_oc_top=window_height-150;
+			var hor_oc_top=window_height-642;
+			var ver_oc_top=window_height-150;
 		}
 		$("#arrow_bg").css('top',hor_oc_top);
 		
