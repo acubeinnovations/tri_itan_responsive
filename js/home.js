@@ -26,6 +26,7 @@ $(function(){
 		autoResize : false,
 		speed : 600,	
 		mode: 'vertical',
+		noSwiping: true,
 		onSlideChangeEnd: function(swiper){
 		  toggle_vertical_nav();
 		}
@@ -38,6 +39,7 @@ $(function(){
 		autoResize : false,
 		speed : 600,	
 		mode: 'vertical',
+		noSwiping: true,
 		onSlideChangeEnd: function(swiper){
 		  toggle_vertical_nav();
 		}
@@ -50,6 +52,7 @@ $(function(){
 		autoResize : false,
 		speed : 600,	
 		mode: 'vertical',
+		noSwiping: true,
 		onSlideChangeEnd: function(swiper){
 		  toggle_vertical_nav();
 		}
@@ -64,6 +67,7 @@ $(function(){
 		autoResize : false,
 		speed: 600,	
 		mode: 'vertical',
+		noSwiping: true,
 		onSlideChangeEnd: function(swiper){
 		  toggle_vertical_nav();
 		}
@@ -77,6 +81,7 @@ $(function(){
 		autoResize : false,
 		speed: 600,	
 		mode: 'vertical',
+		noSwiping: true,
 		onSlideChangeEnd: function(swiper){
 		  toggle_vertical_nav();
 		}
@@ -388,19 +393,48 @@ $(function(){
 //	if(window_height <= 600){
 //		oc_top = -390;
 //	}
-//	
-	if(window_height > 1000){
-		oc_top += -300;
+
+	oc_top_unchanged = oc_top;
+	if(window_height >=1000){
+		oc_top = oc_top_unchanged + -300;
+	}
+	if(window_height < 1000){
+		oc_top = oc_top_unchanged + -250;
+	}
+
+
+	if(window_height <= 900){
+		oc_top = oc_top_unchanged + -180;
+	}
+	if(window_height <= 800){
+		oc_top = oc_top_unchanged + -80;
+	}
+	if(window_height <= 750){
+		oc_top = oc_top_unchanged + -20;
+	}
+
+	if(window_height <= 700){
+		oc_top = oc_top_unchanged + 50;
 	}
 
 	if(window_height <= 600){
-		oc_top += 50;
+		oc_top = oc_top_unchanged + 130;
+	}
+	if(window_height <= 550){
+		oc_top = oc_top_unchanged + 200;
 	}
 	if(window_height <= 500){
-		oc_top += 140;
+		oc_top = oc_top_unchanged + 230;
 	}
+	if(window_height <= 450){
+		oc_top = oc_top_unchanged + 300;
+	}
+	if(window_height <= 400){
+		oc_top = oc_top_unchanged + 310;
+	}
+
 	if(window_height <= 320){
-		oc_top += 180;
+		oc_top =oc_top_unchanged + 340;
 	}
 	
 	//alert(oc_left);
