@@ -223,12 +223,13 @@ $(function(){
 		var window_width = $( window ).width();//alert(window_width);
 		if(window_height=='768' && window_width=='1024'){
 			var hor_oc_top=window_height-665;
-			var ver_oc_top=window_height-170;
+			var ver_oc_top=window_height-150;
 		}else{
-			var hor_oc_top=window_height-645;
+			var hor_oc_top=window_height-665;
 			var ver_oc_top=window_height-150;
 		}
-		$("#arrow_bg").css('top',hor_oc_top);
+		//$("#arrow_bg").css('top',hor_oc_top);
+		$(".pagination").css('top',hor_oc_top);
 		
 		var ver_oc_left=708;
 		$(".pagination-vertical").css('padding-top',ver_oc_top);
