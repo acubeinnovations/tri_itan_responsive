@@ -231,7 +231,7 @@ $(function(){
 		//$("#arrow_bg").css('top',hor_oc_top);
 		$(".pagination").css('top',hor_oc_top);
 		
-		var ver_oc_left=708;
+		var ver_oc_left=709;
 		$(".pagination-vertical").css('padding-top',ver_oc_top);
 		$(".pagination-vertical").css('margin-left',ver_oc_left);
 		
