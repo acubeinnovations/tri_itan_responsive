@@ -406,6 +406,12 @@ $(function(){
 	if(window_height <= 900){
 		oc_top = oc_top_unchanged + -180;
 	}
+	if(window_height <= 950){
+		oc_top = oc_top_unchanged + -130;
+	}
+	if(window_height <= 930){
+		oc_top = oc_top_unchanged + -100;
+	}
 	if(window_height <= 800){
 		oc_top = oc_top_unchanged + -80;
 	}
