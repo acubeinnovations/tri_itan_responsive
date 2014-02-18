@@ -8,8 +8,7 @@ body {
 	color:#000000;
 	font-family: "MuseoSans";
 	font-size:12px;
-	background-color:#231F20;
-	
+	background-color:#231F20;	
 	overflow: hidden;
 	margin:0px;
 
@@ -50,6 +49,7 @@ border-right:1px solid #231F20 !important;
 text-transform: capitalize !important;
 text-align:left;
 background:#eaeaea !important;
+
 }
 
 .navbar-nav > li > a {
@@ -140,6 +140,7 @@ color: #000 !important;
 background:#eaeaea !important;
 padding:0px !important;
 margin:0px !important;
+margin-left:-1px !important;
 min-width:120px !important;
 width:120px !important;
 z-index: -1; 

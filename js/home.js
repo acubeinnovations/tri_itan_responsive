@@ -215,6 +215,26 @@ $(function(){
 				$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".6");
 				$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".4");
 				$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".2");
+				vs_active = vertical1.activeIndex+1;
+				switch(vs_active)
+				{
+				case 1:
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity","1");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".6");
+					break;
+				case 2:
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".8");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity","1");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".8");
+					break;
+				case 3:
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".6");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity","1");
+					break;
+				}
+
 			  break;
 			case 2:
 			  	$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".8");
@@ -222,6 +242,26 @@ $(function(){
 				$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".8");
 				$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".6");
 				$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".4");
+
+				vs_active = vertical2.activeIndex+1;
+				switch(vs_active)
+				{
+				case 1:
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity","1");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".6");
+					break;
+				case 2:
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".8");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity","1");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".8");
+					break;
+				case 3:
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".6");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity","1");
+					break;
+				}
 			  break;
 			case 3:
 			  	$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".6");
@@ -229,6 +269,25 @@ $(function(){
 				$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity","1");
 				$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".8");
 				$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".6");
+				vs_active = vertical3.activeIndex+1;
+				switch(vs_active)
+				{
+				case 1:
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity","1");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".6");
+					break;
+				case 2:
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".8");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity","1");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".8");
+					break;
+				case 3:
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".6");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity","1");
+					break;
+				}
 			  break;
 			case 4:
 			  	$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".4");
@@ -236,6 +295,25 @@ $(function(){
 				$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".8");
 				$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity","1");
 				$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".8");
+				vs_active = vertical4.activeIndex+1;
+				switch(vs_active)
+				{
+				case 1:
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity","1");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".6");
+					break;
+				case 2:
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".8");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity","1");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".8");
+					break;
+				case 3:
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".6");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity","1");
+					break;
+				}
 			  break;
 			case 5:
 			  	$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".2");
@@ -243,6 +321,25 @@ $(function(){
 				$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".6");
 				$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity",".8");
 				$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide-active >.inner-vertical').css("opacity","1");
+				vs_active = vertical5.activeIndex+1;
+				switch(vs_active)
+				{
+				case 1:
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity","1");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".6");
+					break;
+				case 2:
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".8");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity","1");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".8");
+					break;
+				case 3:
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".6");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity","1");
+					break;
+				}
 			  break;
 			}
 
@@ -456,7 +553,7 @@ $(function(){
 	outer_pagination.offset({ top: oc_top+270, left: as_offset.left-151 });
 	outer_pagination_vertical.offset({ top: oc_top+601, left: as_offset.left+300 });
 
-	keyboard_intro.offset({ top: oc_top+271, left: as_offset.left-150 });
+	keyboard_intro.offset({ top: oc_top+270, left: as_offset.left-151 });
 
 	}
 	
