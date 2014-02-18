@@ -222,7 +222,7 @@ $(function(){
 		var window_height=$( window ).height();//alert(window_height);
 		var window_width = $( window ).width();//alert(window_width);
 		if(window_height=='768' && window_width=='1024'){
-			var hor_oc_top=window_height-665;
+			var hor_oc_top=window_height-660;
 			var ver_oc_top=window_height-150;
 		}else{
 			var hor_oc_top=window_height-665;
