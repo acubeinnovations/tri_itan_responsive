@@ -22,8 +22,27 @@ $(function(){
                 var mapElement = document.getElementById('map');
 
                 // Create the Google Map using out element and options defined above
+				
+
                 var map = new google.maps.Map(mapElement, mapOptions);
-            
+            	var icon = { 
+				url: '/images/favicon.ico'
+			};
+
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(19.000011,72.829726),
+				map: map,
+				icon: icon
+			});
+			var contentString = '<strong>Itan Jewels.</strong>';
+			var infowindow = new google.maps.InfoWindow({
+				content: contentString
+			});
+		 
+			google.maps.event.addListener(marker, 'mouseover', function() {
+			  infowindow.open(map,marker);
+			});
+			
 			var mapOptions1 = {
                     // How zoomed in you want the map to start at (always required)
                     zoom: 15,
@@ -42,5 +61,23 @@ $(function(){
 
                 // Create the Google Map using out element and options defined above
                 var map1 = new google.maps.Map(mapElement1, mapOptions1);
+				var icon = { 
+					url: '/images/favicon.ico'
+				};
+
+				var marker1 = new google.maps.Marker({
+					position: new google.maps.LatLng(25.069458, 55.142491),
+					map: map1,
+					icon: icon
+				});
+				var contentString = '<strong>Itan Jewels.</strong>';
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString
+				});
+			 
+				google.maps.event.addListener(marker1, 'mouseover', function() {
+				  infowindow.open(map1,marker1);
+				});
+				
             }
 });
