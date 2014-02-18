@@ -456,7 +456,7 @@ $(function(){
 	outer_pagination.offset({ top: oc_top+270, left: as_offset.left-151 });
 	outer_pagination_vertical.offset({ top: oc_top+601, left: as_offset.left+300 });
 
-	keyboard_intro.offset({ top: oc_top+271, left: as_offset.left-150 });
+	keyboard_intro.offset({ top: oc_top+270, left: as_offset.left-151 });
 
 	}
 	
