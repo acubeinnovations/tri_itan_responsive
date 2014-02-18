@@ -34,13 +34,16 @@ $(function(){
 				map: map,
 				icon: icon
 			});
-			var contentString = '<strong>Itan Jewels.</strong>';
+			var contentString = '<strong>ITAN JEWELS PVT LTD</strong><br>126 G FL, 0B/0C BENEFICE BUSINESS HOUSE <br>MATHURA DAS MILL COMPOUND, N M MARG<br>LOWER PAREL WEST, MUMBAI 400 013<br>';
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString
 			});
 		 
 			google.maps.event.addListener(marker, 'mouseover', function() {
 			  infowindow.open(map,marker);
+			});
+			google.maps.event.addListener(marker, 'mouseout', function() {
+				  infowindow.close();
 			});
 			
 			var mapOptions1 = {
@@ -70,14 +73,18 @@ $(function(){
 					map: map1,
 					icon: icon
 				});
-				var contentString = '<strong>Itan Jewels.</strong>';
-				var infowindow = new google.maps.InfoWindow({
-					content: contentString
+				var contentString1 = '<strong>ITAN JEWELS DMCC</strong><br>PO BOX 938898 <br>28F, AU GOLD TOWER<br>CLUSTER I, JLT, DUBAI<br>';
+				var infowindow1 = new google.maps.InfoWindow({
+					content: contentString1
 				});
 			 
 				google.maps.event.addListener(marker1, 'mouseover', function() {
-				  infowindow.open(map1,marker1);
+				  infowindow1.open(map1,marker1);
 				});
+				google.maps.event.addListener(marker1, 'mouseout', function() {
+				  infowindow1.close();
+				});
+				
 				
             }
 });
