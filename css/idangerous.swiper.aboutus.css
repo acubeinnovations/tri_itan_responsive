@@ -4,25 +4,25 @@
 }
 
 .swiper-container-horizontal{
-min-width:1143px;
+min-width:1142px;
 min-height:900px;
 position:fixed;
 bottom:-145px;
-left:-137px;
+left:-136px;
 
 }
 
 .swiper-slide-horizontal {
 min-width:572px;
 min-height:900px;
-margin:-1px -2px 1px 1px !important;
+margin:-1px -1px 1px 1px !important;
 
 }
 
 .swiper-slide-vertical {
 min-width:572px;
 min-height:452px;
-margin:-1px 1px 1px 2px !important;
+margin:-1px 1px 1px 1px !important;
 }
 
 
@@ -95,9 +95,10 @@ margin-left:-1px !important;
 }
 
 .pagination {
-	width:80px;
+	width:82px;
 	position:fixed;
 	z-index:200;
+	left:70px;
 }
 .swiper-pagination-switch {
 	vertical-align: middle;
