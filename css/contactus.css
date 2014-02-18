@@ -6,6 +6,10 @@
 	
 	font-family: "MuseoSans-100";
 	src: url("../fonts/MuseoSans-100.otf");
+	
+	font-family: "MuseoSans-500";
+	src: url("../fonts/MuseoSans_500.otf");
+
 }
 
 
@@ -22,7 +26,7 @@
 
 hr.style-six { border: 0; height: 0; border-top: 1px solid #fff; border-bottom: 1px solid #fff; }
 .title_head {
-	font-family: "MuseoSans-100";
+	font-family: "MuseoSans-500";
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight:bold;
@@ -34,7 +38,7 @@ hr.style-six { border: 0; height: 0; border-top: 1px solid #fff; border-bottom: 
 	margin: 11px 0px 10px 0px  !important;
 }
 .content{
-font-family:"MuseoSans-100";
+font-family:"MuseoSans-500";
 font-size:12px;
 }
 #address-container{
