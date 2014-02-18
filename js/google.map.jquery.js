@@ -26,7 +26,7 @@ $(function(){
 
                 var map = new google.maps.Map(mapElement, mapOptions);
             	var icon = { 
-				url: '/images/favicon.ico'
+				url: 'images/favicon.ico'
 			};
 
 			var marker = new google.maps.Marker({
@@ -62,7 +62,7 @@ $(function(){
                 // Create the Google Map using out element and options defined above
                 var map1 = new google.maps.Map(mapElement1, mapOptions1);
 				var icon = { 
-					url: '/images/favicon.ico'
+					url: 'images/favicon.ico'
 				};
 
 				var marker1 = new google.maps.Marker({
