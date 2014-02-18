@@ -46,5 +46,25 @@ body {
 	vertical-align:bottom !important;
 }
 
+@media (max-height: 720px) { 
+.container-outer{
+	width:100%; height:4000px; position:fixed; bottom:265px;
+	background-image:url("../images/products/product_bg_small.png");
+	background-repeat:repeat;
+	background-position: bottom;
+}
+.product-image{
+	width:283px;
+	height:193px;
+	float:left;
+	background-repeat:no-repeat !important;
+	background-position: center !important;
+
+}
+.products-container-outer{width:100%; height:845px; position:fixed; bottom:0px; display:none; }
+.products-container{width:849px; height:579px; margin-left:auto; margin-right:auto; margin-bottom:300px; }
+
+
+}
 
 
