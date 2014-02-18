@@ -6,9 +6,9 @@ window_width=$( window ).width();
 if(window_width<890){
 $('.copy').html("");
 }else if(window_width>890 && window_width<1095){
-$('.copy').html("&copy Copyright 2013");
+$('.copy').html("&copy Copyright 2014");
 }else{
-$('.copy').html("&copy Copyright 2013 Itan Jewels DMCC. All rights reserved.");
+$('.copy').html("&copy Copyright 2014 Itan Jewels DMCC. All rights reserved.");
 }
 
 }
