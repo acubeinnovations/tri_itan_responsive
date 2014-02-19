@@ -168,13 +168,14 @@
 						}
 					})
 
+					$('.products-container').css('cursor', 'url(images/cross.png), auto');
+
 				}
 
 				$('.product-image').click(function(){
 					$('.products-container').css('background-image','');
-					
 					flip_image($(this));
-
+					
 				});
 
 				
@@ -190,7 +191,7 @@
 				$('.flip-box').css('background','transparent');
 			});
 	
-
+			$('.products-container').css('cursor', 'url(images/open_white-over.png), auto');
 //alert($(window).width());
 
 			});
