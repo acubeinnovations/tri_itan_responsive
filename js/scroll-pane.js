@@ -27,8 +27,14 @@ scrollbar.width( "100%" );
 .on('touchmove',function() {
 scrollbar.width( handleHelper.width() );
 })
-.on('swipe',function() {
+.on('touchend',function() {
+scrollbar.width( "100%" );
+})
+.on('scrollstart',function() {
 scrollbar.width( handleHelper.width() );
+})
+.on('scrollstop',function() {
+scrollbar.width( "100%" );
 })
 .append( "<span class='ui-icon ui-icon-grip-dotted-vertical'></span>" )
 .wrap( "<div class='ui-handle-helper-parent'></div>" ).parent();
