@@ -15,10 +15,39 @@ $(function(){
 		  toggle_vertical_nav();
 		},
 		onSlideClick: function(swiper){
-		  	swiper.swipeTo(swiper.clickedSlideIndex);
+			if(vertical1.clickedSlideIndex == vertical1.activeIndex && swiper.clickedSlideIndex == 0){
+		  		swiper.swipeTo(swiper.clickedSlideIndex);
+			}
+			if(vertical2.clickedSlideIndex == vertical2.activeIndex && swiper.clickedSlideIndex == 1){
+		  		swiper.swipeTo(swiper.clickedSlideIndex);
+			}
+			if(vertical3.clickedSlideIndex == vertical3.activeIndex && swiper.clickedSlideIndex == 2){
+		  		swiper.swipeTo(swiper.clickedSlideIndex);
+			}
+			if(vertical4.clickedSlideIndex == vertical4.activeIndex && swiper.clickedSlideIndex == 3){
+		  		swiper.swipeTo(swiper.clickedSlideIndex);
+			}
+			if(vertical5.clickedSlideIndex == vertical5.activeIndex && swiper.clickedSlideIndex == 4){
+		  		swiper.swipeTo(swiper.clickedSlideIndex);
+			}
+
 		},
 		onSlideTouch: function(swiper){
-		  	swiper.swipeTo(swiper.clickedSlideIndex);
+			if(vertical1.clickedSlideIndex == vertical1.activeIndex && swiper.clickedSlideIndex == 0){
+		  		swiper.swipeTo(swiper.clickedSlideIndex);
+			}
+			if(vertical2.clickedSlideIndex == vertical2.activeIndex && swiper.clickedSlideIndex == 1){
+		  		swiper.swipeTo(swiper.clickedSlideIndex);
+			}
+			if(vertical3.clickedSlideIndex == vertical3.activeIndex && swiper.clickedSlideIndex == 2){
+		  		swiper.swipeTo(swiper.clickedSlideIndex);
+			}
+			if(vertical4.clickedSlideIndex == vertical4.activeIndex && swiper.clickedSlideIndex == 3){
+		  		swiper.swipeTo(swiper.clickedSlideIndex);
+			}
+			if(vertical5.clickedSlideIndex == vertical5.activeIndex && swiper.clickedSlideIndex == 4){
+		  		swiper.swipeTo(swiper.clickedSlideIndex);
+			}
 		}
 		
 	});
@@ -547,59 +576,59 @@ $(function(){
 //		oc_top = -390;
 //	}
 
-	oc_top_unchanged = oc_top;
-	if(window_height >=1000){
-		oc_top = oc_top_unchanged + -300;
-	}
-	if(window_height < 1000){
-		oc_top = oc_top_unchanged + -250;
-	}
-
-
-	if(window_height <= 900){
-		oc_top = oc_top_unchanged + -180;
-	}
-	if(window_height <= 950){
-		oc_top = oc_top_unchanged + -130;
-	}
-	if(window_height <= 930){
-		oc_top = oc_top_unchanged + -100;
-	}
-	if(window_height <= 800){
-		oc_top = oc_top_unchanged + -80;
-	}
-	if(window_height <= 750){
-		oc_top = oc_top_unchanged + -20;
-	}
-
-	if(window_height <= 700){
-		oc_top = oc_top_unchanged + 50;
-	}
-
-	if(window_height <= 600){
-		oc_top = oc_top_unchanged + 130;
-	}
-	if(window_height <= 550){
-		oc_top = oc_top_unchanged + 200;
-	}
-	if(window_height <= 500){
-		oc_top = oc_top_unchanged + 230;
-	}
-	if(window_height <= 450){
-		oc_top = oc_top_unchanged + 300;
-	}
-	if(window_height <= 400){
-		oc_top = oc_top_unchanged + 310;
-	}
-
-	if(window_height <= 320){
-		oc_top =oc_top_unchanged + 340;
-	}
+//	oc_top_unchanged = oc_top;
+//	if(window_height >=1000){
+//		oc_top = oc_top_unchanged + -300;
+//	}
+//	if(window_height < 1000){
+//		oc_top = oc_top_unchanged + -250;
+//	}
+// 
+// 
+//	if(window_height <= 900){
+//		oc_top = oc_top_unchanged + -180;
+//	}
+//	if(window_height <= 950){
+//		oc_top = oc_top_unchanged + -130;
+//	}
+//	if(window_height <= 930){
+//		oc_top = oc_top_unchanged + -100;
+//	}
+//	if(window_height <= 800){
+//		oc_top = oc_top_unchanged + -80;
+//	}
+//	if(window_height <= 750){
+//		oc_top = oc_top_unchanged + -20;
+//	}
+// 
+//	if(window_height <= 700){
+//		oc_top = oc_top_unchanged + 50;
+//	}
+// 
+//	if(window_height <= 600){
+//		oc_top = oc_top_unchanged + 130;
+//	}
+//	if(window_height <= 550){
+//		oc_top = oc_top_unchanged + 200;
+//	}
+//	if(window_height <= 500){
+//		oc_top = oc_top_unchanged + 230;
+//	}
+//	if(window_height <= 450){
+//		oc_top = oc_top_unchanged + 300;
+//	}
+//	if(window_height <= 400){
+//		oc_top = oc_top_unchanged + 310;
+//	}
+// 
+//	if(window_height <= 320){
+//		oc_top =oc_top_unchanged + 340;
+//	}
 	
 	//alert(oc_left);
 	//alert(oc_top);
 
-
+	oc_top = ((window_height-50)/2)-450;
 	outer_container.offset({ top: oc_top, left: oc_left });
 	var active_slide = $(".swiper-slide-active>.inner");
 	as_offset = active_slide.offset();
