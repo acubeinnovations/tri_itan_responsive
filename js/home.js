@@ -31,23 +31,6 @@ $(function(){
 		  		swiper.swipeTo(swiper.clickedSlideIndex);
 			}
 
-		},
-		onSlideTouch: function(swiper){
-			if(vertical1.clickedSlideIndex == vertical1.activeIndex && swiper.clickedSlideIndex == 0){
-		  		swiper.swipeTo(swiper.clickedSlideIndex);
-			}
-			if(vertical2.clickedSlideIndex == vertical2.activeIndex && swiper.clickedSlideIndex == 1){
-		  		swiper.swipeTo(swiper.clickedSlideIndex);
-			}
-			if(vertical3.clickedSlideIndex == vertical3.activeIndex && swiper.clickedSlideIndex == 2){
-		  		swiper.swipeTo(swiper.clickedSlideIndex);
-			}
-			if(vertical4.clickedSlideIndex == vertical4.activeIndex && swiper.clickedSlideIndex == 3){
-		  		swiper.swipeTo(swiper.clickedSlideIndex);
-			}
-			if(vertical5.clickedSlideIndex == vertical5.activeIndex && swiper.clickedSlideIndex == 4){
-		  		swiper.swipeTo(swiper.clickedSlideIndex);
-			}
 		}
 		
 	});
@@ -69,11 +52,6 @@ $(function(){
 		  if(horizontal_slide.activeIndex == 0){
 		  	swiper.swipeTo(swiper.clickedSlideIndex);
 		  }
-		},
-		onSlideTouch: function(swiper){
-		  if(horizontal_slide.activeIndex == 0){
-		  	swiper.swipeTo(swiper.clickedSlideIndex);
-		  }
 		}
 		});
 
@@ -92,11 +70,6 @@ $(function(){
 		  if(horizontal_slide.activeIndex == 1){
 		  	swiper.swipeTo(swiper.clickedSlideIndex);
 		  }
-		},
-		onSlideTouch: function(swiper){
-		  if(horizontal_slide.activeIndex == 1){
-		  	swiper.swipeTo(swiper.clickedSlideIndex);
-		  }
 		}
 		});
 
@@ -112,11 +85,6 @@ $(function(){
 		  toggle_vertical_nav();
 		},
 		onSlideClick: function(swiper){
-		  if(horizontal_slide.activeIndex == 2){
-		  	swiper.swipeTo(swiper.clickedSlideIndex);
-		  }
-		},
-		onSlideTouch: function(swiper){
 		  if(horizontal_slide.activeIndex == 2){
 		  	swiper.swipeTo(swiper.clickedSlideIndex);
 		  }
@@ -140,11 +108,6 @@ $(function(){
 		  if(horizontal_slide.activeIndex == 3){
 		  	swiper.swipeTo(swiper.clickedSlideIndex);
 		  }
-		},
-		onSlideTouch: function(swiper){
-		  if(horizontal_slide.activeIndex == 3){
-		  	swiper.swipeTo(swiper.clickedSlideIndex);
-		  }
 		}
 		});
 
@@ -161,11 +124,6 @@ $(function(){
 		  toggle_vertical_nav();
 		},
 		onSlideClick: function(swiper){
-		  if(horizontal_slide.activeIndex == 4){
-		  	swiper.swipeTo(swiper.clickedSlideIndex);
-		  }
-		},
-		onSlideTouch: function(swiper){
 		  if(horizontal_slide.activeIndex == 4){
 		  	swiper.swipeTo(swiper.clickedSlideIndex);
 		  }
