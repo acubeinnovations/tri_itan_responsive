@@ -9,36 +9,38 @@
 
 
 .swiper-container-horizontal{
-min-width:1500px;
-min-height:900px;
+min-width:1510px;
+min-height:903px;
 position:fixed;
 bottom:-250px;
-left:-150px;
+left:-151px;
 }
 
 .swiper-slide-horizontal {
-min-width:300px;
-min-height:900px;
+min-width:302px;
+min-height:903px;
+width: 302px !important;
 margin:0px 0px 0px 0px !important;
 }
 
 .swiper-slide-vertical {
-min-width:300px;
-min-height:300px;
+min-width:302px;
+min-height:301px;
+width: 302px !important;
 margin:0px 0px 0px 0px !important;
 }
 
 
 .inner{
-	height: 1200px;
-	width: 300px;	
+	height: 1204px;
+	width: 302px;	
 	opacity: 1;
 	
 }
 
 .swiper-slide-active .inner{
-	height: 900px;
-	width: 300px;
+	height: 903px;
+	width: 302px !important;
 	opacity: 1;
 
 }
@@ -46,8 +48,8 @@ margin:0px 0px 0px 0px !important;
 
 
 .inner-vertical{
-	height: 299px;
-	width: 299px;
+	height: 301px;
+	width: 301px !important;
 	color:#fff;
 	line-height:200px;
 	text-align:center;

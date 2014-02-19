@@ -476,30 +476,6 @@ $(function(){
 	//alert(container_width);
 
 
-//	if(window_width <= 1600){
-//		oc_left = 0;
-//	}
-//	if(window_width <= 1366){
-//		oc_left = -100;
-//	}
-//	if(window_width <= 1200){
-//		oc_left = -300;
-//	}
-//	if(window_width <= 1024){
-//		oc_left = -350;
-//	}
-// 
-//	if(window_width <= 800){
-//		oc_left = -400;
-//	}
-	
-//	if(window_width <= 700){
-//		oc_left = -430;
-//	}
-//	if(window_width <= 600){
-//		oc_left = -450;
-//	}
-	
 	if(window_width <= 768){
 		oc_left += -95;
 	}
@@ -518,71 +494,6 @@ $(function(){
 
 
 	//alert(oc_left);
-
-
-//	if(window_height <= 700){
-//		oc_top = -310;
-//	}
-//	if(window_height <= 640){
-//		oc_top = -315;
-//	}
-// 
-//	if(window_height <= 623){
-//		oc_top = -325;
-//	}
-//	if(window_height <= 600){
-//		oc_top = -390;
-//	}
-
-//	oc_top_unchanged = oc_top;
-//	if(window_height >=1000){
-//		oc_top = oc_top_unchanged + -300;
-//	}
-//	if(window_height < 1000){
-//		oc_top = oc_top_unchanged + -250;
-//	}
-// 
-// 
-//	if(window_height <= 900){
-//		oc_top = oc_top_unchanged + -180;
-//	}
-//	if(window_height <= 950){
-//		oc_top = oc_top_unchanged + -130;
-//	}
-//	if(window_height <= 930){
-//		oc_top = oc_top_unchanged + -100;
-//	}
-//	if(window_height <= 800){
-//		oc_top = oc_top_unchanged + -80;
-//	}
-//	if(window_height <= 750){
-//		oc_top = oc_top_unchanged + -20;
-//	}
-// 
-//	if(window_height <= 700){
-//		oc_top = oc_top_unchanged + 50;
-//	}
-// 
-//	if(window_height <= 600){
-//		oc_top = oc_top_unchanged + 130;
-//	}
-//	if(window_height <= 550){
-//		oc_top = oc_top_unchanged + 200;
-//	}
-//	if(window_height <= 500){
-//		oc_top = oc_top_unchanged + 230;
-//	}
-//	if(window_height <= 450){
-//		oc_top = oc_top_unchanged + 300;
-//	}
-//	if(window_height <= 400){
-//		oc_top = oc_top_unchanged + 310;
-//	}
-// 
-//	if(window_height <= 320){
-//		oc_top =oc_top_unchanged + 340;
-//	}
-	
 	//alert(oc_left);
 	//alert(oc_top);
 
@@ -593,10 +504,10 @@ $(function(){
 	var keyboard_intro = $("#keyboard-intro-home");
 	kb_intro_offset = keyboard_intro.offset();
 
-	outer_pagination.offset({ top: oc_top+270, left: as_offset.left-151 });
-	outer_pagination_vertical.offset({ top: oc_top+601, left: as_offset.left+300 });
+	outer_pagination.offset({ top: oc_top+272, left: as_offset.left-151 });
+	outer_pagination_vertical.offset({ top: oc_top+605, left: as_offset.left+302 });
+	keyboard_intro.offset({ top: oc_top+272, left: as_offset.left-151 });
 
-	keyboard_intro.offset({ top: oc_top+270, left: as_offset.left-151 });
 
 	}
 	
