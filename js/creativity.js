@@ -5,13 +5,14 @@
 				
 
 			function showloader() {  
-				for(i=1; i< 17; i++){
-					$("#product-image-"+i).css('background','url(images/loader.gif)');
-				}
+				
+					$(".flip-box").css('background','url(images/loader.gif)');
+				
 			}	
 
 			function showimage(id) {  
 				$("#product-image-"+id).css('background','url(images/creativity/products/image_small_'+id+'.png)');
+				$("#box-"+id).css('background','transparent');
 			}
 	
 			showloader();

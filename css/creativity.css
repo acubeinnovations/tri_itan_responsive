@@ -44,6 +44,8 @@ body {
 .flip-box{
 width:100%;
 height:100%;
+background-repeat:no-repeat !important;
+background-position: center !important;
 }
 #info{
  background:#ccc; color:#000 !important;
@@ -127,7 +129,7 @@ height:100%;
 
 }
 
-@media (min-width: 800px) { 
+@media (min-width: 768px ) { 
 
 
 body {
