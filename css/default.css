@@ -8,7 +8,8 @@ body {
 	color:#000000;
 	font-family: "MuseoSans";
 	font-size:12px;
-	background-color: #dd4d31;
+	background:url('../images/bg.png') !important;
+	background-size:100% !important; 
 	overflow: hidden;
 	margin:0px;
 

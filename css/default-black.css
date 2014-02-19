@@ -22,39 +22,39 @@ body {
 
 @media (min-width: 768px) {
 
-.navbar-collapse{
-
+.navbar-default{
+border:0px  !important;
+box-shadow:none !important;
 
 }
+
 .navbar-nav{
 padding:0px  !important;
 margin:0px  !important;
-border-left:1px solid #231F20 !important;
-background:#eaeaea !important;
+background:none !important;
 }
 .navbar {
-min-height:49px !important;
+min-height:50px !important;
 padding:0px  !important;
-margin:0px  !important;
-border:1px solid #231F20 !important;
-background:#c8c8c8 !important;
+margin:1px  !important;
+background:url('../images/menu_bg.png') !important;
+background-position:-1px -0px !important; 
 }
 
 .navbar-nav > li{
-height:49px !important;
-width:149px !important;
+height:50px !important;
+width:150px !important;
 padding:0px  !important;
 margin:0px  !important;
-border-right:1px solid #231F20 !important;
+margin-right:1px !important;
 text-transform: capitalize !important;
 text-align:left;
-background:#eaeaea !important;
-
+background:none !important;
 }
 
 .navbar-nav > li > a {
 	display:block;
-	height:49px !important;
+	height:50px !important;
 	line-height:20px;
 	margin:0px  !important;
 	display: block;
@@ -94,7 +94,7 @@ background:#eaeaea !important;
 
 .menu-active{
 	display:block;
-	height:49px !important;
+	height:50px !important;
 	line-height:20px;
 	margin:0px  !important;
 	display: block  !important;
@@ -126,7 +126,7 @@ background:#eaeaea !important;
 	transition: all 0.3s ease-in-out !important;
 	background-image:url('../images/flip_white.gif') !important;
 	background-repeat:no-repeat !important;
-	background-position:0px -51px !important;
+	background-position:0px -50px !important;
 	
 
 }
@@ -170,8 +170,8 @@ z-index: -1;
 	font-size:12px;
 
 	font-family: "MuseoSans";
-	border-bottom:1px solid #231F20 !important;
-	border-right:1px solid #231F20 !important;
+	margin-bottom:1px !important;
+	margin-right:1px !important;
 	width:120px !important;
 
 	background-image:url('../images/flip_sub.png');
@@ -210,7 +210,7 @@ z-index: -1;
 
 
 .navbar-brand{
-width: 150px;
+width: 151px;
 }
 
 	#logo {
@@ -221,11 +221,12 @@ width: 150px;
 		float: left;
 		position: fixed;
 		visibility: visible;
-		left: 1px;
-		bottom: 1px;
+		left: 0px;
+		bottom: 0px;
 		background-image: url(../images/logo.jpg);
 		background-repeat: no-repeat;
-		border:1px 0px 1px 1px solid #231F20 !important;
+		margin:0px 1px 1px 1px !important;
+		border:0px;
 	}
 
 
