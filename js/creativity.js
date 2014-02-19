@@ -191,6 +191,6 @@
 			});
 	
 
-
+//alert($(window).width());
 
 			});
