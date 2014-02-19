@@ -24,20 +24,15 @@ scrollbar.width( handleHelper.width() );
 .mouseup(function() {
 scrollbar.width( "100%" );
 })
-/*
-.on('touchmove',function() {
+
+.on('touchstart',function() {
 scrollbar.width( handleHelper.width() );
 })
 .on('touchend',function() {
 scrollbar.width( "100%" );
 })
-*/
-.on('scrollstart',function() {
-scrollbar.width( handleHelper.width() );
-})
-.on('scrollstop',function() {
-scrollbar.width( "100%" );
-})
+
+
 .append( "<span class='ui-icon ui-icon-grip-dotted-vertical'></span>" )
 .wrap( "<div class='ui-handle-helper-parent'></div>" ).parent();
 //change overflow to hidden now that slider handles the scrolling
