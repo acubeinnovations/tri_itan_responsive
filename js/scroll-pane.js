@@ -18,13 +18,16 @@ var scrollbar = $( ".scroll-bar" ).slider({
 
 //append icon to handle
 var handleHelper = scrollbar.find( ".ui-slider-handle" )
-.mousedown(function() {//alert('mousedown');
+.mousedown(function() {
 scrollbar.width( handleHelper.width() );
 })
 .mouseup(function() {
 scrollbar.width( "100%" );
 })
-.on('touchmove',function() {alert('mousedown');
+.on('touchmove',function() {
+scrollbar.width( handleHelper.width() );
+})
+.on('touchend',function() {
 scrollbar.width( handleHelper.width() );
 })
 .append( "<span class='ui-icon ui-icon-grip-dotted-vertical'></span>" )
