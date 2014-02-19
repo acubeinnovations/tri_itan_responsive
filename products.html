@@ -29,6 +29,7 @@
 
     <!-- customized for product -->
     <link href="css/products.css" rel="stylesheet">
+
   </head>
 
   <body  class="affix">
@@ -111,7 +112,7 @@
 
 <div class="scroll-pane ui-widget  ui-corner-all">
 <div class="scroll-bar-wrap ui-widget-content ui-corner-bottom">
-	<div class="scroll-bar"></div>
+	<div class="scroll-bar" dragable="true"></div>
 </div>
 <div class="scroll-content">
 	<div class="scroll-content-item itan_product " product_id="product_1" product_desc="Sample description product 1" >Product 1</div>
@@ -145,8 +146,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">$(document).bind("mobileinit", function(){$.extend(  $.mobile , {autoInitializePage: false})});</script>
+	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>pt>
 	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui-sliderAccess.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-sliderAccess.js"></script>
 	<script type="text/javascript" src="js/scroll-pane.js"></script>
 	<script type="text/javascript" src="js/products.js"></script>
 	<script src="js/copyright_reponsive.js"></script>
