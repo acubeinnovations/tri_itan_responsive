@@ -2,22 +2,37 @@
 			$(document).ready(function(){
 				
 				//flip
-				$("#box-1").css('background-image','url(images/creativity/products/image_small_1.png)');
-				$("#box-2").css('background-image','url(images/creativity/products/image_small_2.png)');
-				$("#box-3").css('background-image','url(images/creativity/products/image_small_3.png)');
-				$("#box-4").css('background-image','url(images/creativity/products/image_small_4.png)');
-				$("#box-5").css('background-image','url(images/creativity/products/image_small_5.png)');
-				$("#box-6").css('background-image','url(images/creativity/products/image_small_6.png)');
-				$("#box-7").css('background-image','url(images/creativity/products/image_small_7.png)');
-				$("#box-8").css('background-image','url(images/creativity/products/image_small_8.png)');
-				$("#box-9").css('background-image','url(images/creativity/products/image_small_9.png)');
-				$("#box-10").css('background-image','url(images/creativity/products/image_small_10.png)');
-				$("#box-11").css('background-image','url(images/creativity/products/image_small_11.png)');
-				$("#box-12").css('background-image','url(images/creativity/products/image_small_12.png)');
-				$("#box-13").css('background-image','url(images/creativity/products/image_small_13.png)');
-				$("#box-14").css('background-image','url(images/creativity/products/image_small_14.png)');
-				$("#box-15").css('background-image','url(images/creativity/products/image_small_15.png)');
-				$("#box-16").css('background-image','url(images/creativity/products/image_small_16.png)');
+				
+
+			function showloader() {  
+				for(i=1; i< 17; i++){
+					$("#product-image-"+i).css('background','url(images/loader.gif)');
+				}
+			}	
+
+			function showimage(id) {  
+				$("#product-image-"+id).css('background','url(images/creativity/products/image_small_'+id+'.png)');
+			}
+	
+			showloader();
+			setTimeout(function() { showimage(1); }, 200);
+			setTimeout(function() { showimage(2); }, 400);
+			setTimeout(function() { showimage(3); }, 600);
+			setTimeout(function() { showimage(4); }, 800);
+			setTimeout(function() { showimage(5); }, 1000);
+			setTimeout(function() { showimage(6); }, 1200);
+			setTimeout(function() { showimage(7); }, 1400);
+			setTimeout(function() { showimage(8); }, 1800);
+			setTimeout(function() { showimage(9); }, 2000);
+			setTimeout(function() { showimage(10); }, 2200);
+			setTimeout(function() { showimage(11); }, 2400);
+			setTimeout(function() { showimage(12); }, 2600);
+			setTimeout(function() { showimage(13); }, 2800);
+			setTimeout(function() { showimage(14); }, 3000);
+			setTimeout(function() { showimage(15); }, 3200);
+			setTimeout(function() { showimage(16); }, 3400);
+
+
 
 				function flip_image(current_element){
 					$("#box-1").flip({
@@ -156,20 +171,25 @@
 
 				$('.product-image').click(function(){
 					$('.products-container').css('background-image','');
+					
 					flip_image($(this));
 
 				});
 
 				
 				function show_large(current_element){
-					$('.products-container').css('background-image','url(images/creativity/products/'+current_element.attr('large')+'.png)');
+					$('.products-container').css('background','url(images/creativity/products/'+current_element.attr('large')+'.png)');
 					$('.products-container').css('background-repeat','no-repeat');
 					$('.products-container').css('background-position','center');
-					$('.products-container').css('background-size','1260px 860px');
+					
 				}
 
 			$('.container-outer').click(function(){
 				$('.product-image').show();
+				$('.flip-box').css('background','transparent');
 			});
 	
+
+
+
 			});

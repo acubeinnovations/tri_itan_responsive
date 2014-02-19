@@ -5,31 +5,35 @@ body {
 	background-color: #000;
 	overflow: hidden;
 	margin:0px;
-	background-image:url("../images/creativity/product_null.png");
-	background-repeat:repeat-x;
+	background:url("../images/creativity/creativity_null.png");
+	background-repeat:repeat;
 	background-attachment:fixed;
 	background-position: bottom ;
+	background-size:100px 68px;
 }
 .container-outer{
-	width:100%; height:4000px; position:fixed; bottom:50px;
-	background-image:url("../images/creativity/creativity_bg.png");
+	width:100%; height:4000px; position:fixed; bottom:68px;
+	background:url("../images/creativity/creativity_bg.png");
 	background-repeat:repeat;
 	background-position: bottom;
+	background-size:100px 68px;
 }
-.products-container-outer{width:100%; height:860px; position:fixed; bottom:50px;  }
-.products-container{width:1260px; height:860px; margin-left:auto; margin-right:auto;
+.products-container-outer{width:100%; height:272px; position:fixed; bottom:68px;  }
+.products-container{width:400px; height:272px; margin-left:auto; margin-right:auto;
+	background-size: 400px 272px !important;
  }
 
 .product-image{
-	width:315px;
-	height:215px;
+	width:100px;
+	height:68px;
 	float:left;
 	background-repeat:no-repeat !important;
-	background-position: top center !important;
+	background-position: center !important;
 	margin:0px !important;
 	padding:0px !important;
 	border-top:1px solid #2f2f2f !important;
 	border-right:1px solid #2f2f2f !important;
+	background-size:100px 68px;
 }
 .product-image-left{
 	border-left:1px solid #2f2f2f !important;
@@ -57,3 +61,204 @@ height:100%;
 }
 
 
+@media (min-width: 600px) {
+
+body {
+	color:#fff;
+	font-family: "MuseoSans";
+	font-size:12px;
+	background-color: #000;
+	overflow: hidden;
+	margin:0px;
+	background:url("../images/creativity/creativity_null.png");
+	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position: bottom ;
+	background-size:150px 102px;
+}
+.container-outer{
+	width:100%; height:4000px; position:fixed; bottom:100px;
+	background:url("../images/creativity/creativity_bg.png");
+	background-repeat:repeat;
+	background-position: bottom;
+	background-size:150px 102px;
+}
+.products-container-outer{width:100%; height:408px; position:fixed; bottom:100px;  }
+.products-container{width:600px; height:408px; margin-left:auto; margin-right:auto;
+	background-size: 600px 408px !important;
+ }
+
+.product-image{
+	width:100px;
+	height:68px;
+	float:left;
+	background-repeat:no-repeat !important;
+	background-position: center !important;
+	margin:0px !important;
+	padding:0px !important;
+	border-top:1px solid #2f2f2f !important;
+	border-right:1px solid #2f2f2f !important;
+	background-size:150px 102px;
+}
+.product-image-left{
+	border-left:1px solid #2f2f2f !important;
+}
+.product-image-bottom{
+	border-bottom:1px solid #2f2f2f !important;
+}
+.flip-box{
+width:100%;
+height:100%;
+}
+#info{
+ background:#ccc; color:#000 !important;
+}
+.product-head{
+	margin:10px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+}
+.product-description{
+	margin:10px;
+	margin-top:30px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+}
+
+}
+
+@media (min-width: 800px) { 
+
+
+body {
+	color:#fff;
+	font-family: "MuseoSans";
+	font-size:12px;
+	background-color: #000;
+	overflow: hidden;
+	margin:0px;
+	background:url("../images/creativity/creativity_null.png");
+	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position: bottom ;
+	background-size:200px 136px;
+}
+.container-outer{
+	width:100%; height:4000px; position:fixed; bottom:100px;
+	background:url("../images/creativity/creativity_bg.png");
+	background-repeat:repeat;
+	background-position: bottom;
+	background-size:200px 136px;
+}
+.products-container-outer{width:100%; height:544px; position:fixed; bottom:100px;  }
+.products-container{width:800px; height:544px; margin-left:auto; margin-right:auto;
+	background-size: 800px 544px !important;
+ }
+
+.product-image{
+	width:200px;
+	height:136px;
+	float:left;
+	background-repeat:no-repeat !important;
+	background-position: center !important;
+	margin:0px !important;
+	padding:0px !important;
+	border-top:1px solid #2f2f2f !important;
+	border-right:1px solid #2f2f2f !important;
+	background-size:200px 136px;
+}
+.product-image-left{
+	border-left:1px solid #2f2f2f !important;
+}
+.product-image-bottom{
+	border-bottom:1px solid #2f2f2f !important;
+}
+.flip-box{
+width:100%;
+height:100%;
+}
+#info{
+ background:#ccc; color:#000 !important;
+}
+.product-head{
+	margin:10px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+}
+.product-description{
+	margin:10px;
+	margin-top:30px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+}
+
+
+
+}
+
+
+
+@media (min-width: 2000px) { 
+body {
+	color:#fff;
+	font-family: "MuseoSans";
+	font-size:12px;
+	background-color: #000;
+	overflow: hidden;
+	margin:0px;
+	background:url("../images/creativity/creativity_null.png");
+	background-repeat:repeat-x;
+	background-attachment:fixed;
+	background-position: bottom ;
+	background-size:315px 215px;
+}
+.container-outer{
+	width:100%; height:4000px; position:fixed; bottom:100px;
+	background:url("../images/creativity/creativity_bg.png");
+	background-repeat:repeat;
+	background-position: bottom;
+	background-size:315px 215px;
+}
+.products-container-outer{width:100%; height:860px; position:fixed; bottom:100px;  }
+.products-container{width:1260px; height:860px; margin-left:auto; margin-right:auto;
+	background-size: 1260px 860px !important;
+ }
+
+.product-image{
+	width:315px;
+	height:215px;
+	float:left;
+	background-repeat:no-repeat !important;
+	background-position: center !important;
+	margin:0px !important;
+	padding:0px !important;
+	border-top:1px solid #2f2f2f !important;
+	border-right:1px solid #2f2f2f !important;
+	background-size:315px 215px;
+}
+.product-image-left{
+	border-left:1px solid #2f2f2f !important;
+}
+.product-image-bottom{
+	border-bottom:1px solid #2f2f2f !important;
+}
+.flip-box{
+width:100%;
+height:100%;
+}
+#info{
+ background:#ccc; color:#000 !important;
+}
+.product-head{
+	margin:10px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+}
+.product-description{
+	margin:10px;
+	margin-top:30px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+}
+
+}
