@@ -1,5 +1,5 @@
 $(function() {
-$('.ui-icon-grip-dotted-vertical').draggable({ axis: 'x' });
+$('.scroll-bar').draggable({ axis: 'x' });
 //scrollpane parts
 var scrollPane = $( ".scroll-pane" ),
 scrollContent = $( ".scroll-content" );
