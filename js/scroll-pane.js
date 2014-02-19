@@ -1,5 +1,5 @@
 $(function() {
-$('.scroll-bar').draggable({ axis: 'x' });
+
 //scrollpane parts
 var scrollPane = $( ".scroll-pane" ),
 scrollContent = $( ".scroll-content" );
