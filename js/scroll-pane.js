@@ -24,12 +24,14 @@ scrollbar.width( handleHelper.width() );
 .mouseup(function() {
 scrollbar.width( "100%" );
 })
+/*
 .on('touchmove',function() {
 scrollbar.width( handleHelper.width() );
 })
 .on('touchend',function() {
 scrollbar.width( "100%" );
 })
+*/
 .on('scrollstart',function() {
 scrollbar.width( handleHelper.width() );
 })
