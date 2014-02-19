@@ -18,11 +18,14 @@ var scrollbar = $( ".scroll-bar" ).slider({
 
 //append icon to handle
 var handleHelper = scrollbar.find( ".ui-slider-handle" )
-.mousedown(function() {
+.mousedown(function() {//alert('mousedown');
 scrollbar.width( handleHelper.width() );
 })
 .mouseup(function() {
 scrollbar.width( "100%" );
+})
+.click(function() {//alert('mousedown');
+scrollbar.width( handleHelper.width() );
 })
 .append( "<span class='ui-icon ui-icon-grip-dotted-vertical'></span>" )
 .wrap( "<div class='ui-handle-helper-parent'></div>" ).parent();
