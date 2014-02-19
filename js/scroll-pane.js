@@ -1,4 +1,5 @@
 $(function() {
+$('.scroll-bar').draggable({ axis: 'x' });
 //scrollpane parts
 var scrollPane = $( ".scroll-pane" ),
 scrollContent = $( ".scroll-content" );
@@ -18,15 +19,21 @@ var scrollbar = $( ".scroll-bar" ).slider({
 
 //append icon to handle
 var handleHelper = scrollbar.find( ".ui-slider-handle" )
-.mousedown(function() {//alert('mousedown');
+.mousedown(function() {
 scrollbar.width( handleHelper.width() );
 })
 .mouseup(function() {
 scrollbar.width( "100%" );
 })
-.click(function() {//alert('mousedown');
+
+.on('touchstart',function() {
 scrollbar.width( handleHelper.width() );
 })
+.on('touchend',function() {
+scrollbar.width( "100%" );
+})
+
+
 .append( "<span class='ui-icon ui-icon-grip-dotted-vertical'></span>" )
 .wrap( "<div class='ui-handle-helper-parent'></div>" ).parent();
 //change overflow to hidden now that slider handles the scrolling
