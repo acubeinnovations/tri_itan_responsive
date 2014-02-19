@@ -24,7 +24,7 @@ scrollbar.width( handleHelper.width() );
 .mouseup(function() {
 scrollbar.width( "100%" );
 })
-.click(function() {//alert('mousedown');
+.on('touchmove',function() {alert('mousedown');
 scrollbar.width( handleHelper.width() );
 })
 .append( "<span class='ui-icon ui-icon-grip-dotted-vertical'></span>" )
