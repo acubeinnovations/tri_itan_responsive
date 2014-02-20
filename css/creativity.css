@@ -62,9 +62,27 @@ background-position: center !important;
 	font-family: "MuseoSans" !important;
 }
 
-
-
-
+#close-div{
+	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
+	width:50px;
+	height:50px;
+	cursor: url(../images/creativity/close.png) , auto ;
+	display:none;
+	background-position:0px 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; 
+}
+#close-div:hover{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+background-position:0px 50px;
+}
 @media (min-width: 480px) {
 
 body {
