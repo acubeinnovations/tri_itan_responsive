@@ -64,16 +64,19 @@ background-position: center !important;
 
 #close-div{
 	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
-	width:50px;
-	height:50px;
+
 	cursor: url(../images/creativity/close.png) , auto ;
-	display:none;
+	
 	background-position:0px 0px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out; 
+	background-size: 12px 26px;
+	width:12px;
+	height:12px;
+	display:none;
 }
 #close-div:hover{
 	-webkit-transition: all 0.3s ease-in-out;
@@ -81,8 +84,12 @@ background-position: center !important;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-background-position:0px 50px;
+	background-position:0px 12px;
+	background-size: 12px 26px;
 }
+
+
+
 @media (min-width: 480px) {
 
 body {
@@ -149,6 +156,35 @@ background-position: center !important;
 	font-family: "MuseoSans" !important;
 }
 
+
+#close-div{
+	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
+
+	cursor: url(../images/creativity/close.png) , auto ;
+	
+	background-position:0px 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; 
+	background-size: 25px 50px;
+	width:25px;
+	height:25px;
+	display:none;
+}
+#close-div:hover{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-position:0px 25px;
+	background-size: 25px 50px;
+}
+
+
+
 }
 
 @media (min-width: 600px) {
@@ -214,6 +250,32 @@ height:100%;
 	color:#000 !important;
 	font-family: "MuseoSans" !important;
 }
+
+
+#close-div{
+	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
+	cursor: url(../images/creativity/close.png) , auto ;
+	background-position:0px 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; 
+	background-size: 35px 75px;
+	width:35px;
+	height:35px;
+	display:none;
+}
+#close-div:hover{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-position:0px 35px;
+	background-size: 35px 70px;
+}
+
 
 }
 
@@ -285,6 +347,31 @@ height:100%;
 
 
 
+#close-div{
+	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
+	cursor: url(../images/creativity/close.png) , auto ;
+	background-position:0px 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; 
+	background-size: 50px 100px;
+	width:50px;
+	height:50px;
+	display:none;
+}
+#close-div:hover{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-position:0px 50px;
+	background-size: 50px 100px;
+}
+
+
 }
 
 
@@ -351,5 +438,32 @@ height:100%;
 	color:#000 !important;
 	font-family: "MuseoSans" !important;
 }
+
+
+#close-div{
+	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
+	cursor: url(../images/creativity/close.png) , auto ;
+	background-position:0px 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; 
+	background-size: 50px 100px;
+	width:50px;
+	height:50px;
+	display:none;
+}
+#close-div:hover{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-position:0px 50px;
+	background-size: 50px 100px;
+}
+
+
 
 }
