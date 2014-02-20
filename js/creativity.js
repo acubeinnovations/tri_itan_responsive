@@ -169,6 +169,7 @@
 					})
 
 					$('.products-container').css('cursor', 'url(images/creativity/close.png), auto');
+					$('.container-outer').css('cursor', 'url(images/creativity/close.png), auto');
 
 				}
 
@@ -193,6 +194,7 @@
 				$('.flip-box').css('background','transparent');
 				if(product_clicked == false){
 					$('.products-container').css('cursor', 'url(images/creativity/open.png), auto');
+					$('.container-outer').css('cursor', 'auto');
 					$('#close-div').hide();
 				}
 				product_clicked = false;

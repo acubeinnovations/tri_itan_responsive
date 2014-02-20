@@ -164,7 +164,7 @@ background-position: center !important;
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 
 body {
 	color:#fff;
@@ -239,7 +239,7 @@ height:100%;
 }
 
 
-@media (min-width: 800px ) { 
+@media (min-width: 900px ) { 
 
 
 body {
