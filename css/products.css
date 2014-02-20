@@ -5,28 +5,273 @@ body {
 	background-color: #000;
 	overflow: hidden;
 	margin:0px;
-	background-image:url("../images/products/product_null.png");
-	background-repeat:repeat-x;
+	background:url("../images/products/product_bg_600.png");
+	background-repeat:repeat;
 	background-attachment:fixed;
-	background-position: bottom;
+	background-position: bottom ;
+	background-size:151px 104px !important;
 }
 .container-outer{
-	width:100%; height:4000px; position:fixed; bottom:50px;
-	background-image:url("../images/products/product_bg.png");
+	width:100%; height:4000px; position:fixed; bottom:237px;
+	background:url("../images/products/product_bg_600.png");
 	background-repeat:repeat;
 	background-position: bottom;
+	background-size:151px 104px !important;
 }
-.products-container-outer{width:100%; height:912px; position:fixed; bottom:0px; display:none; }
-.products-container{width:945px; height:645px; margin-left:auto; margin-right:auto; margin-bottom:265px; }
+.products-container-outer{width:100%; height:312px; position:fixed; bottom:237px; display:none; }
+.products-container{width:453px; height:312px; margin-left:auto; margin-right:auto; }
 
 .product-image{
-	width:315px;
-	height:215px;
+	width:151px;
+	height:104px;
 	float:left;
 	background-repeat:no-repeat !important;
 	background-position: center !important;
+	margin:0px !important;
+	padding:0px !important;
+	border-left:1px solid #2f2f2f !important;
+	border-bottom:1px solid #2f2f2f !important;
+	background-size:150px 103px !important;
+}
+
+
+#info{
+ background:#eaeaea; color:#000 !important;
+}
+.product-head{
+	margin:5px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+	font-size:10px;
+}
+.product-description{
+	padding:5px;
+	height:55px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+	font-size:6px;
+	display:table-cell !important;
+	vertical-align:bottom !important;
+}
+
+
+.flip-box{
+width:100%;
+height:100%;
+background-repeat:no-repeat !important;
+background-position: center !important;
+}
+
+
+
+
+
+
+@media (min-width: 600px) { 
+body {
+	color:#fff;
+	font-family: "MuseoSans";
+	font-size:12px;
+	background-color: #000;
+	overflow: hidden;
+	margin:0px;
+	background:url("../images/products/product_bg_600.png");
+	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position: bottom ;
+	background-size:151px 104px !important;
+}
+.container-outer{
+	width:100%; height:4000px; position:fixed; bottom:237px;
+	background:url("../images/products/product_bg_600.png");
+	background-repeat:repeat;
+	background-position: bottom;
+	background-size:151px 104px !important;
+}
+.products-container-outer{width:100%; height:312px; position:fixed; bottom:237px; display:none; }
+.products-container{width:453px; height:312px; margin-left:auto; margin-right:auto; }
+
+.product-image{
+	width:151px;
+	height:104px;
+	float:left;
+	background-repeat:no-repeat !important;
+	background-position: center !important;
+	margin:0px !important;
+	padding:0px !important;
+	border-left:1px solid #2f2f2f !important;
+	border-bottom:1px solid #2f2f2f !important;
+	background-size:150px 103px !important;
+}
+
+
+#info{
+ background:#eaeaea; color:#000 !important;
+}
+.product-head{
+	margin:5px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+	font-size:10px;
+}
+.product-description{
+	padding:5px;
+	height:55px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+	font-size:6px;
+	display:table-cell !important;
+	vertical-align:bottom !important;
+}
+
+
+.flip-box{
+width:100%;
+height:100%;
+background-repeat:no-repeat !important;
+background-position: center !important;
+}
 
 }
+
+
+@media (min-width: 800px) { 
+body {
+	color:#fff;
+	font-family: "MuseoSans";
+	font-size:12px;
+	background-color: #000;
+	overflow: hidden;
+	margin:0px;
+	background:url("../images/products/product_bg_800.png");
+	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position: bottom ;
+	background-size:201px 138px !important;
+}
+.container-outer{
+	width:100%; height:4000px; position:fixed; bottom:237px;
+	background:url("../images/products/product_bg_800.png");
+	background-repeat:repeat;
+	background-position: bottom;
+	background-size:201px 138px !important;
+}
+.products-container-outer{width:100%; height:414px; position:fixed; bottom:237px; display:none; }
+.products-container{width:603px; height:414px; margin-left:auto; margin-right:auto; }
+
+.product-image{
+	width:201px;
+	height:138px;
+	float:left;
+	background-repeat:no-repeat !important;
+	background-position: center !important;
+	margin:0px !important;
+	padding:0px !important;
+	border-left:1px solid #2f2f2f !important;
+	border-bottom:1px solid #2f2f2f !important;
+	background-size:200px 137px !important;
+}
+
+
+#info{
+ background:#eaeaea; color:#000 !important;
+}
+.product-head{
+	margin:10px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+	font-size:13px;
+}
+.product-description{
+	padding:10px;
+	height:100px;
+	color:#000 !important;
+	font-family: "MuseoSans" !important;
+	font-size:9px;
+	display:table-cell !important;
+	vertical-align:bottom !important;
+}
+
+
+.flip-box{
+width:100%;
+height:100%;
+background-repeat:no-repeat !important;
+background-position: center !important;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 2000px) { 
+
+
+body {
+	color:#fff;
+	font-family: "MuseoSans";
+	font-size:12px;
+	background-color: #000;
+	overflow: hidden;
+	margin:0px;
+	background:url("../images/products/product_bg.png");
+	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position: bottom ;
+	background-size:316px 216px !important;
+}
+.container-outer{
+	width:100%; height:4000px; position:fixed; bottom:264px;
+	background:url("../images/products/product_bg.png");
+	background-repeat:repeat;
+	background-position: bottom;
+	background-size:316px 216px !important;
+}
+.products-container-outer{width:100%; height:648px; position:fixed; bottom:264px; display:none; }
+.products-container{width:948px; height:648px; margin-left:auto; margin-right:auto; }
+
+.product-image{
+	width:316px;
+	height:216px;
+	float:left;
+	background-repeat:no-repeat !important;
+	background-position: center !important;
+	margin:0px !important;
+	padding:0px !important;
+	border-left:1px solid #2f2f2f !important;
+	border-bottom:1px solid #2f2f2f !important;
+	background-size:315px 215px !important;
+}
+
+
 #info{
  background:#eaeaea; color:#000 !important;
 }
@@ -46,25 +291,15 @@ body {
 	vertical-align:bottom !important;
 }
 
-@media (max-height: 720px) { 
-.container-outer{
-	width:100%; height:4000px; position:fixed; bottom:265px;
-	background-image:url("../images/products/product_bg_small.png");
-	background-repeat:repeat;
-	background-position: bottom;
-}
-.product-image{
-	width:283px;
-	height:193px;
-	float:left;
-	background-repeat:no-repeat !important;
-	background-position: center !important;
 
-}
-.products-container-outer{width:100%; height:845px; position:fixed; bottom:0px; display:none; }
-.products-container{width:849px; height:579px; margin-left:auto; margin-right:auto; margin-bottom:300px; }
-
-
+.flip-box{
+width:100%;
+height:100%;
+background-repeat:no-repeat !important;
+background-position: center !important;
 }
 
 
+
+
+}
