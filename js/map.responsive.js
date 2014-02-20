@@ -3,12 +3,22 @@ $(function(){
 	window_width=$(window).width();
 	window_height=$(window).height();
 	map_width=window_width/2;
-	map_height=window_height-150;
-	$('#map').css('width',map_width);
-	$('#map1').css('width',map_width);
-	$('#map').css('height',map_height);
-	$('#map1').css('height',map_height);
-	$('#address-container').css('top',map_height);
+	
+	if(window_height==692){
+		map_height=window_height-170;
+		$('#address-container').css('top',map_height);
+		$('#map').css('width',map_width);
+		$('#map1').css('width',map_width);
+		$('#map').css('height',map_height);
+		$('#map1').css('height',map_height);
+	}else{
+		map_height=window_height-150;
+		$('#map').css('width',map_width);
+		$('#map1').css('width',map_width);
+		$('#map').css('height',map_height);
+		$('#map1').css('height',map_height);
+		$('#address-container').css('top',map_height);
+	}
 	if(window_width>=768){
 	$('#address-container').css('padding-left',150);
 	$('#address-table').css('width',window_width-160);
@@ -20,6 +30,7 @@ $(function(){
 	$('#address-dubai').css('width',map_width);
 	$('#address-mumbai').css('width',map_width);
 	}
+	
 	}
 	change_map_pos();
 
