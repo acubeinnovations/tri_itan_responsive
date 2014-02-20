@@ -9,38 +9,33 @@ body {
 	background-repeat:repeat;
 	background-attachment:fixed;
 	background-position: bottom ;
-	background-size:50px 34px !important;
+	background-size:51px 35px !important;
 }
 .container-outer{
 	width:100%; height:4000px; position:fixed; bottom:68px;
 	background:url("../images/creativity/creativity_bg.png");
 	background-repeat:repeat;
 	background-position: bottom;
-	background-size:50px 34px !important;
+	background-size:51px 35px !important;
 }
-.products-container-outer{width:100%; height:136px; position:fixed; bottom:68px;  }
-.products-container{width:200px; height:136px; margin-left:auto; margin-right:auto;
-	background-size: 200px 136px !important;
+.products-container-outer{width:100%; height:140px; position:fixed; bottom:68px;  }
+.products-container{width:204px; height:140px; margin-left:auto; margin-right:auto;
+	background-size: 204px 140px !important;
  }
 
 .product-image{
-	width:50px;
-	height:34px;
+	width:51px;
+	height:35px;
 	float:left;
 	background-repeat:no-repeat !important;
 	background-position: center !important;
 	margin:0px !important;
 	padding:0px !important;
-	border-top:1px solid #2f2f2f !important;
-	border-right:1px solid #2f2f2f !important;
+	border-left:1px solid #222222 !important;
+	border-bottom:1px solid #222222 !important;
 	background-size:50px 34px !important;
 }
-.product-image-left{
-	border-left:1px solid #2f2f2f !important;
-}
-.product-image-bottom{
-	border-bottom:1px solid #2f2f2f !important;
-}
+
 .flip-box{
 width:100%;
 height:100%;
@@ -63,7 +58,7 @@ background-position: center !important;
 }
 
 #close-div{
-	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
+	background:url("../images/creativity/mask_close.jpg") #222222 ;
 
 	cursor: url(../images/creativity/close.png) , auto ;
 	
@@ -103,62 +98,44 @@ body {
 	background-repeat:repeat;
 	background-attachment:fixed;
 	background-position: bottom ;
-	background-size:100px 68px !important;
+	background-size:101px 69px !important;
 }
 .container-outer{
 	width:100%; height:4000px; position:fixed; bottom:68px;
 	background:url("../images/creativity/creativity_bg.png");
 	background-repeat:repeat;
 	background-position: bottom;
-	background-size:100px 68px !important;
+	background-size:101px 69px !important;
 }
-.products-container-outer{width:100%; height:272px; position:fixed; bottom:68px;  }
-.products-container{width:400px; height:272px; margin-left:auto; margin-right:auto;
-	background-size: 400px 272px !important;
+.products-container-outer{width:100%; height:276px; position:fixed; bottom:68px;  }
+.products-container{width:404px; height:276px; margin-left:auto; margin-right:auto;
+	background-size: 404px 276px !important;
  }
 
 .product-image{
-	width:100px;
-	height:68px;
+	width:101px;
+	height:66px;
 	float:left;
 	background-repeat:no-repeat !important;
 	background-position: center !important;
 	margin:0px !important;
 	padding:0px !important;
-	border-top:1px solid #2f2f2f !important;
-	border-right:1px solid #2f2f2f !important;
+	border-left:1px solid #222222 !important;
+	border-bottom:1px solid #222222 !important;
 	background-size:100px 68px !important;
 }
-.product-image-left{
-	border-left:1px solid #2f2f2f !important;
-}
-.product-image-bottom{
-	border-bottom:1px solid #2f2f2f !important;
-}
+
 .flip-box{
 width:100%;
 height:100%;
 background-repeat:no-repeat !important;
 background-position: center !important;
 }
-#info{
- background:#ccc; color:#000 !important;
-}
-.product-head{
-	margin:10px;
-	color:#000 !important;
-	font-family: "MuseoSans" !important;
-}
-.product-description{
-	margin:10px;
-	margin-top:30px;
-	color:#000 !important;
-	font-family: "MuseoSans" !important;
-}
+
 
 
 #close-div{
-	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
+	background:url("../images/creativity/mask_close.jpg") #222222 ;
 
 	cursor: url(../images/creativity/close.png) , auto ;
 	
@@ -200,60 +177,42 @@ body {
 	background-repeat:repeat;
 	background-attachment:fixed;
 	background-position: bottom ;
-	background-size:150px 102px !important;
+	background-size:151px 103px !important;
 }
 .container-outer{
 	width:100%; height:4000px; position:fixed; bottom:100px;
-	background:url("../images/creativity/creativity_bg.png");
+	background:url("../images/creativity/creativity_bg_600.png");
 	background-repeat:repeat;
 	background-position: bottom;
-	background-size:150px 102px !important;
+	background-size:151px 103px !important;
 }
-.products-container-outer{width:100%; height:408px; position:fixed; bottom:100px;  }
-.products-container{width:600px; height:408px; margin-left:auto; margin-right:auto;
-	background-size: 600px 408px !important;
+.products-container-outer{width:100%; height:412px; position:fixed; bottom:100px;  }
+.products-container{width:604px; height:412px; margin-left:auto; margin-right:auto;
+	background-size: 604px 412px !important;
  }
 
 .product-image{
-	width:150px;
-	height:102px;
+	width:151px;
+	height:103px;
 	float:left;
 	background-repeat:no-repeat !important;
 	background-position: center !important;
 	margin:0px !important;
 	padding:0px !important;
-	border-top:1px solid #2f2f2f !important;
-	border-right:1px solid #2f2f2f !important;
+	border-left:1px solid #222222 !important;
+	border-bottom:1px solid #222222 !important;
 	background-size:150px 102px !important;
 }
-.product-image-left{
-	border-left:1px solid #2f2f2f !important;
-}
-.product-image-bottom{
-	border-bottom:1px solid #2f2f2f !important;
-}
+
 .flip-box{
 width:100%;
 height:100%;
 }
-#info{
- background:#ccc; color:#000 !important;
-}
-.product-head{
-	margin:10px;
-	color:#000 !important;
-	font-family: "MuseoSans" !important;
-}
-.product-description{
-	margin:10px;
-	margin-top:30px;
-	color:#000 !important;
-	font-family: "MuseoSans" !important;
-}
+
 
 
 #close-div{
-	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
+	background:url("../images/creativity/mask_close.jpg") #222222 ;
 	cursor: url(../images/creativity/close.png) , auto ;
 	background-position:0px 0px;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -294,61 +253,42 @@ body {
 	background-repeat:repeat;
 	background-attachment:fixed;
 	background-position: bottom ;
-	background-size:200px 136px !important;
+	background-size:201px 138px !important;
 }
 .container-outer{
 	width:100%; height:4000px; position:fixed; bottom:100px;
-	background:url("../images/creativity/creativity_bg.png");
+	background:url("../images/creativity/creativity_bg_800.png");
 	background-repeat:repeat;
 	background-position: bottom;
-	background-size:200px 136px !important;
+	background-size:201px 138px !important;
 }
-.products-container-outer{width:100%; height:544px; position:fixed; bottom:100px;  }
-.products-container{width:800px; height:544px; margin-left:auto; margin-right:auto;
-	background-size: 800px 544px !important;
+.products-container-outer{width:100%; height:552px; position:fixed; bottom:101px;  }
+.products-container{width:804px; height:552px; margin-left:auto; margin-right:auto;
+	background-size: 804px 552px !important;
  }
 
 .product-image{
-	width:200px;
-	height:136px;
+	width:201px;
+	height:138px;
 	float:left;
 	background-repeat:no-repeat !important;
 	background-position: center !important;
 	margin:0px !important;
 	padding:0px !important;
-	border-top:1px solid #2f2f2f !important;
-	border-right:1px solid #2f2f2f !important;
-	background-size: 200px 136px !important;
+	border-left:1px solid #222222 !important;
+	border-bottom:1px solid #222222 !important;
+	background-size: 200px 137px !important;
 }
-.product-image-left{
-	border-left:1px solid #2f2f2f !important;
-}
-.product-image-bottom{
-	border-bottom:1px solid #2f2f2f !important;
-}
+
 .flip-box{
 width:100%;
 height:100%;
-}
-#info{
- background:#ccc; color:#000 !important;
-}
-.product-head{
-	margin:10px;
-	color:#000 !important;
-	font-family: "MuseoSans" !important;
-}
-.product-description{
-	margin:10px;
-	margin-top:30px;
-	color:#000 !important;
-	font-family: "MuseoSans" !important;
 }
 
 
 
 #close-div{
-	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
+	background:url("../images/creativity/mask_close.jpg") #222222 ;
 	cursor: url(../images/creativity/close.png) , auto ;
 	background-position:0px 0px;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -385,63 +325,44 @@ body {
 	overflow: hidden;
 	margin:0px;
 	background:url("../images/creativity/creativity_null.png");
-	background-repeat:repeat-x;
+	background-repeat:repeat;
 	background-attachment:fixed;
 	background-position: bottom ;
-	background-size:315px 215px !important;
+	background-size:316px 216px !important;
 }
 .container-outer{
 	width:100%; height:4000px; position:fixed; bottom:100px;
 	background:url("../images/creativity/creativity_bg.png");
 	background-repeat:repeat;
 	background-position: bottom;
-	background-size:315px 215px !important;
+	background-size:316px 216px !important;
 }
-.products-container-outer{width:100%; height:860px; position:fixed; bottom:100px;  }
-.products-container{width:1260px; height:860px; margin-left:auto; margin-right:auto;
-	background-size: 1260px 860px !important;
+.products-container-outer{width:100%; height:864px; position:fixed; bottom:101px;  }
+.products-container{width:1264px; height:864px; margin-left:auto; margin-right:auto;
+	background-size: 1264px 864px !important;
  }
 
 .product-image{
-	width:315px;
-	height:215px;
+	width:316px;
+	height:216px;
 	float:left;
 	background-repeat:no-repeat !important;
 	background-position: center !important;
 	margin:0px !important;
 	padding:0px !important;
-	border-top:1px solid #2f2f2f !important;
-	border-right:1px solid #2f2f2f !important;
+	border-left:1px solid #222222 !important;
+	border-bottom:1px solid #222222 !important;
 	background-size:315px 215px !important;
 }
-.product-image-left{
-	border-left:1px solid #2f2f2f !important;
-}
-.product-image-bottom{
-	border-bottom:1px solid #2f2f2f !important;
-}
+
 .flip-box{
 width:100%;
 height:100%;
 }
-#info{
- background:#ccc; color:#000 !important;
-}
-.product-head{
-	margin:10px;
-	color:#000 !important;
-	font-family: "MuseoSans" !important;
-}
-.product-description{
-	margin:10px;
-	margin-top:30px;
-	color:#000 !important;
-	font-family: "MuseoSans" !important;
-}
 
 
 #close-div{
-	background:url("../images/creativity/mask_close.jpg") #2f2f2f ;
+	background:url("../images/creativity/mask_close.jpg") #222222 ;
 	cursor: url(../images/creativity/close.png) , auto ;
 	background-position:0px 0px;
 	-webkit-transition: all 0.3s ease-in-out;
