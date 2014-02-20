@@ -81,7 +81,15 @@ setTimeout( sizeScrollbar, 10 );//safari wants a timeout
 var scroll_content_width = $( ".scroll-content" ).width();
 var window_width = $(window).width();
 
-var margin_left = (scroll_content_width/2)- (window_width/2)-150;
+
+if(window_width >= 2000){
+item_width = 315;
+var margin_left = ((scroll_content_width/2)- (window_width/2)-150)+item_width;
+}else{
+item_width = 200;
+var margin_left = ((scroll_content_width/2)- (window_width/2)-100)+item_width;
+}
+
 $(".scroll-content" ).attr( "style", "margin-left: -"+margin_left+"px;" );
 
 });
