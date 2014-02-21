@@ -1,24 +1,17 @@
 $(function(){
-		var web_address=$(location).attr('href');
-		var slide_index= web_address.match(/#(.*?)#/);
-		if(slide_index==null){
-		slide_preview_index=0;
-		}else{
-		slide_preview_index=slide_index[1];
-		}
+
 		
-		if(slide_preview_index==0){
-		$('#prev').fadeTo( "fast", 0.2 );
-		$('.nav_up').fadeTo( "fast", 0.2 );
-		$('.nav_down').fadeTo( "fast", 0.2 );
-		}
+change_slide();
+
+				$('.nav_up').fadeTo( "fast", 0.2 );
+				$('.nav_down').fadeTo( "fast", 0.2 );
+
+	
 		var horizontal_slide = new Swiper('.swiper-container-horizontal',{
 		    calculateHeight: false,
-		    cssWidthAndHeight: false,
-			pagination:'.pagination',
+		    cssWidthAndHeight: true,
 			centeredSlides: true,
 			slidesPerView: 2,
-			initialSlide: slide_preview_index,
 			watchActiveIndex: true,
 			keyboardControl: true,
 			autoResize : false,	
@@ -28,21 +21,20 @@ $(function(){
 			  h_slide =horizontal_slide.activeIndex;
 				if(h_slide==1){
 				toggle_vertical_nav();
-				$('#next').fadeTo('fast',0.2);
-				$('#prev').fadeTo('fast',1);
 				}else{
 				$('.nav_up').fadeTo( "fast", 0.2 );
 				$('.nav_down').fadeTo( "fast", 0.2 );
-				$('#next').fadeTo('fast',1);
-				$('#prev').fadeTo('fast',0.2);
 				}
-			}
-		
+			},
+			onSlideChangeEnd: function(swiper){
+			 	change_arrow_pos();
+			},		
 		});
 
 
 
 		var vertical1 = new Swiper('.swiper-container-vertical-1',{
+			cssWidthAndHeight: true,
 			centeredSlides: false,
 			slidesPerView: 0,
 			watchActiveIndex: true,
@@ -52,6 +44,7 @@ $(function(){
 			});
 
 		var vertical2 = new Swiper('.swiper-container-vertical-2',{
+			cssWidthAndHeight: true,
 			centeredSlides: true,
 			slidesPerView: 3,
 			watchActiveIndex: true,
@@ -61,39 +54,26 @@ $(function(){
 			onSlideChangeStart: function(swiper){
 			  h_slide =horizontal_slide.activeIndex;
 				if(h_slide==1){
-				toggle_vertical_nav();
-			
+					toggle_vertical_nav();
 				}else{
-				toggle_vertical_nav();
-			
+					toggle_vertical_nav();
 				}
 			}
 			});
 		
-		$('#team').click(function(){
-		horizontal_slide.swipePrev();
-		
-		$('#next').fadeTo('fast',1);
-		$('#prev').fadeTo('fast',0.2);
-		});
-		$('#legacy').click(function(){
-		horizontal_slide.swipeNext();
-		
-		$('#next').fadeTo('fast',0.2);
-		$('#prev').fadeTo('fast',1);
-		});
-		$('#next').click(function(){
-		
-		horizontal_slide.swipeNext();
-		$('#next').fadeTo('fast',0.2);
-		$('#prev').fadeTo('fast',1);
 
+
+
+
+		$('#next').click(function(){
+			horizontal_slide.swipeNext();
+			$('#next').fadeTo('fast',0.2);
+			$('#prev').fadeTo('fast',1);
 		});
 		$('#prev').click(function(){
-		
-		horizontal_slide.swipePrev();
-		$('#next').fadeTo('fast',1);
-		$('#prev').fadeTo('fast',0.2);
+			horizontal_slide.swipePrev();
+			$('#next').fadeTo('fast',1);
+			$('#prev').fadeTo('fast',0.2);
 		});
 	
 		
@@ -167,13 +147,16 @@ $(function(){
 				}
 		});
 
+
+
 		function toggle_vertical_nav(){
 			v_slide =horizontal_slide.activeIndex + 1;
 			v_slide_acive = 1;
 			switch(v_slide)
 			{
 			case 1:
-			  
+			  	$('.nav_up').fadeTo( "fast", 0.2 );
+				$('.nav_down').fadeTo( "fast", 0.2 );
 			  break;
 			case 2:
 			  v_slide_acive = vertical2.activeIndex + 1;
@@ -193,49 +176,14 @@ $(function(){
 			}
 
 
-
-
 		}
 
 		
-
-
-
-
-        if (document.cookie.indexOf("visited") >= 0) {
-            //Don't open any pop up here... You can do something here
-            //alert("Demo already shown");
-            $("#keyboard-intro-home").hide();
-
-        }
-        else {
-            // set a new cookie..
-            var cookieExpiry = new Date();
-            cookieExpiry.setTime(cookieExpiry.getTime() + (8 * 3600 * 1000)); // 8 hours
-            document.cookie = "visited=yes; expires=" + cookieExpiry.toGMTString();
-            //alert("Show demo here");//Do here something...
-            $("#keyboard-intro-home").show();
-			$("#keyboard-intro-home").fadeIn('slow').delay(6000).hide(100);
-
-        }
 		function change_arrow_pos(){
-		var window_height=$( window ).height();//alert(window_height);
-		var window_width = $( window ).width();//alert(window_width);
-		if(window_height=='768' && window_width=='1024'){
-			var hor_oc_top=window_height-660;
-			var ver_oc_top=window_height-150;
-		}else{
-			var hor_oc_top=window_height-665;
-			var ver_oc_top=window_height-150;
-		}
-		//$("#arrow_bg").css('top',hor_oc_top);
-		$(".pagination").css('top',hor_oc_top);
-		
-		var ver_oc_left=709;
-		$(".pagination-vertical").css('padding-top',ver_oc_top);
-		$(".pagination-vertical").css('margin-left',ver_oc_left);
-		
-			
+			var swiper_nav = $("#swiper_nav");
+			var swiper_nav_left = $(".swiper-container-vertical-2").offset().left + $(".swiper-container-vertical-2").width()+1;
+			var swiper_nav_top = $(".vertical-single-slide").offset().top;
+			swiper_nav.offset({ top: swiper_nav_top, left: swiper_nav_left });
 		}
 		change_arrow_pos();
 	
@@ -246,12 +194,54 @@ $(function(){
 		var zoomNew = $( window ).width();
 
 		if (zoom != zoomNew) {
-			
+			change_slide();	
+							
 			change_arrow_pos();
+			
 		}
 	});
 
 
+
+	function change_slide(){
+
+	var slide_width = 572;
+	var slide_height = $(window).height()-152;
+		if(slide_height > 724){
+			//$(".swiper-container-horizontal").css("bottom","-420px");
+			slide_height = 572;
+			container_top = (-1*(slide_height))+($(window).height()-slide_height) -151;
+		}else{
+			container_top = -1*(slide_height-1);
+		}
+
+		var horizontal_container_width =  slide_width * 2;
+		var horizontal_container_height =  slide_height * 3;
+		var inner_height =  slide_height * 3;
+
+		$(".swiper-container-horizontal").css("min-width",horizontal_container_width+"px");
+		$(".swiper-container-horizontal").css("height",horizontal_container_height+"px");
+
+		$(".swiper-slide-horizontal").css("min-width",slide_width+"px");
+		$(".swiper-slide-horizontal").css("height",horizontal_container_height+"px");
+
+		$(".swiper-slide-vertical").css("min-width",slide_width+"px");
+		$(".swiper-slide-vertical").css("height",slide_height+"px");
+
+		$(".inner").css("height",inner_height+"px");
+		$(".inner").css("width",slide_width+"px");
+
+		$(".horizontal-single-slide").css("padding-top",(slide_height)+"px");
+
+		$(".inner-vertical").css("width",slide_width+"px");
+		$(".inner-vertical").css("height",(slide_height-1)+"px");
+		$(".vertical-single-slide").css("height",(slide_height-1)+"px");
+
+		$(".swiper-container-horizontal").offset({top:container_top});
+		}
+	
+
+		
 
 });
 

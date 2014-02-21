@@ -4,49 +4,47 @@
 }
 
 .swiper-container-horizontal{
-min-width:1144px;
-min-height:900px;
-position:fixed;
-bottom:-145px;
-left:-136px;
-
+	min-width:1144px;
+	height:1716px;
+	position:fixed;
+	bottom:-145px;
+	left:-135px;
 }
 
 .swiper-slide-horizontal {
-min-width:572px;
-min-height:900px;
-margin:-1px -1px 1px 1px !important;
-
+	min-width:572px;
+	height:1716px;
+	
 }
 
 .swiper-slide-vertical {
-min-width:572px;
-min-height:452px;
-margin:-1px 1px 1px 1px !important;
+	min-width:572px;
+	height:572px;
+	margin:0px 0px 0px 1px !important;
 }
 
 
 .inner{
-	height: 1200px;
+	height:1716px;
 	width: 572px;	
 	opacity: 1;
 	
 }
 
 .swiper-slide-active .inner{
-	height: 1356px;
+	height:1716px;
 	width: 572px;
 	opacity: 1;
 
 }
-.vertical-single-slide{
-margin-top:453px !important;
-margin-left:-1px !important;
 
+.horizontal-single-slide{
+	padding-top: 572px;
 }
 
+
 .inner-vertical{
-	height: 452px;
+	height: 572px;
 	width: 572px;
 	color:#fff;
 	line-height:200px;
@@ -58,6 +56,10 @@ margin-left:-1px !important;
 	
 
 }
+
+
+
+
 
 .inner-vertical-active{
 	background-color: black;
@@ -75,14 +77,6 @@ margin-left:-1px !important;
 	background: black;
 	opacity: .5;
 }
-.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
-	background: black;
-	opacity: .3;
-}
-.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide-active >.inner-vertical{
-	background: black;
-	opacity: .1;
-}
 
 .swiper-slide-active >.inner > .swiper-container > .swiper-wrapper > .swiper-slide >.inner-vertical{
 	background-color: black;
@@ -94,36 +88,8 @@ margin-left:-1px !important;
 	
 }
 
-.pagination {
-	width:82px;
-	position:fixed;
-	z-index:200;
-	left:70px;
-}
-/*.swiper-pagination-switch {
-	vertical-align: middle;
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background: #494444;
-	cursor: pointer;
-	-webkit-transition: 400ms;
-	-moz-transition: 400ms;
-	-ms-transition: 400ms;
-	-o-transition: 400ms;
-	transition: 400ms;
-	margin-right:1px;
-	opacity:0.6
-}
 
-.swiper-pagination-switch:nth-child(2){
-background: #000;
-	opacity:0.6
-}
-.swiper-pagination-switch:nth-child(4){
-background: #000;
-	opacity:0.6
-}*/
+
 
 .swiper-active-switch {
 /*	background: #fff !important; */
@@ -133,10 +99,9 @@ background: #000;
 .nav_up, .nav_down
 {
 	position: relative;
-	cursor: pointer;
 	display: block;
-	width:50px !important;
-	height:50px !important;
+	width:50px;
+	height:50px;
     background: url(../images/flip_vertical_arrows.png) no-repeat;
     overflow:hidden;
     /* opacity: .4; filter:alpha(opacity=40); */
@@ -174,16 +139,10 @@ background: #000;
     /* opacity: .8; filter:alpha(opacity=80);  */
 }
 
-.pagination-vertical{
 
-
-}
 
 
 #swiper_nav{ 
-height:282px;width:50px; 
+height:100px;width:50px; 
 }
 
-#keyboard-intro-home{
-z-index:30;
-}
