@@ -2,8 +2,11 @@
 			$(document).ready(function(){
 			
 			var product_clicked = false;
-
-
+			
+			var window_height = $(window).height();
+			var window_width = $(window).width();
+			//alert(window_width);
+			//alert(window_height);
 			function showloader() {  
 				
 					$(".flip-box").css('background','url(images/loader.gif)');
