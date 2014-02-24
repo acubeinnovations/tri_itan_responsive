@@ -10,6 +10,7 @@ change_slide();
 		var horizontal_slide = new Swiper('.swiper-container-horizontal',{
 		    calculateHeight: false,
 		    cssWidthAndHeight: true,
+			simulateTouch: false,
 			centeredSlides: true,
 			slidesPerView: 2,
 			watchActiveIndex: true,
@@ -28,23 +29,40 @@ change_slide();
 			},
 			onSlideChangeEnd: function(swiper){
 			 	change_arrow_pos();
-			},		
+			},
+			onSlideClick: function(swiper){
+				if(swiper.clickedSlideIndex == 0){
+			  		swiper.swipeTo(swiper.clickedSlideIndex);
+				}
+				if(vertical2.clickedSlideIndex == vertical2.activeIndex && swiper.clickedSlideIndex == 1){
+			  		swiper.swipeTo(swiper.clickedSlideIndex);
+				}
+
+
+			}		
 		});
 
 
 
 		var vertical1 = new Swiper('.swiper-container-vertical-1',{
 			cssWidthAndHeight: true,
+			simulateTouch: false,
 			centeredSlides: false,
 			slidesPerView: 0,
 			watchActiveIndex: true,
 			autoResize : false,
 			speed : 600,	
-			mode: 'vertical'
+			mode: 'vertical',
+			onSlideClick: function(swiper){
+			  if(horizontal_slide.activeIndex == 0){
+			  	swiper.swipeTo(swiper.clickedSlideIndex);
+			  }
+			}
 			});
 
 		var vertical2 = new Swiper('.swiper-container-vertical-2',{
 			cssWidthAndHeight: true,
+			simulateTouch: false,
 			centeredSlides: true,
 			slidesPerView: 3,
 			watchActiveIndex: true,
@@ -58,6 +76,11 @@ change_slide();
 				}else{
 					toggle_vertical_nav();
 				}
+			},
+			onSlideClick: function(swiper){
+			  if(horizontal_slide.activeIndex == 1){
+			  	swiper.swipeTo(swiper.clickedSlideIndex);
+			  }
 			}
 			});
 		
@@ -240,6 +263,9 @@ change_slide();
 		$(".swiper-container-horizontal").offset({top:container_top});
 		}
 	
+
+
+
 
 		
 
