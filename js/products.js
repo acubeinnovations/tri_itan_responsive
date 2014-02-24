@@ -59,7 +59,7 @@ $(document).ready(function(){
 		$("#box-1").css('background','transparent');
 	}
 
-	if(window_height <= 750){
+	if(window_height <= 690){
 		$("#box-6").hide();
 		$("#box-7").hide();
 		$("#box-8").hide();
@@ -69,14 +69,14 @@ $(document).ready(function(){
 		$("#box-8").show();
 	}
 	showloader();
-	if(window_height > 750){
+	if(window_height > 690){
 		setTimeout(showimage6, 200);
 		setTimeout(showimage7, 400);
 		setTimeout(showimage8, 600);
 	}else{
 
 	}
-	setTimeout(showimage3, 750);
+	setTimeout(showimage3, 800);
 	setTimeout(showimage4, 1000);
 	setTimeout(showimage5, 1200);
 	setTimeout(showimage1, 1400);
