@@ -403,7 +403,7 @@ var v5_slide_acive = 0;
 
 
 	function reinit_v_slide(){
-
+			v_slide =horizontal_slide.activeIndex + 1;
 			switch(v_slide)
 			{
 			case 1:
