@@ -48,7 +48,7 @@ var v5_slide_acive = 0;
 		centeredSlides: true,
 		slidesPerView: 3,
 		watchActiveIndex: true,
-		simulateTouch: false,
+		simulateTouch: true,
 		autoResize : false,
 		speed : 600,	
 		mode: 'vertical',

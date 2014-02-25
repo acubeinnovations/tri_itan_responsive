@@ -62,7 +62,7 @@ change_slide();
 
 		var vertical2 = new Swiper('.swiper-container-vertical-2',{
 			cssWidthAndHeight: true,
-			simulateTouch: false,
+			simulateTouch: true,
 			centeredSlides: true,
 			slidesPerView: 3,
 			watchActiveIndex: true,
