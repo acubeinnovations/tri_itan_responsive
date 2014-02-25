@@ -3,8 +3,8 @@ $(function(){
 		
 change_slide();
 
-				$('.nav_up').fadeTo( "fast", 0.2 );
-				$('.nav_down').fadeTo( "fast", 0.2 );
+				$('.nav_up').fadeTo( "fast", 0 );
+				$('.nav_down').fadeTo( "fast", 0 );
 
 	
 		var horizontal_slide = new Swiper('.swiper-container-horizontal',{
@@ -23,8 +23,8 @@ change_slide();
 				if(h_slide==1){
 				toggle_vertical_nav();
 				}else{
-				$('.nav_up').fadeTo( "fast", 0.2 );
-				$('.nav_down').fadeTo( "fast", 0.2 );
+				$('.nav_up').fadeTo( "fast", 0 );
+				$('.nav_down').fadeTo( "fast", 0 );
 				}
 			},
 			onSlideChangeEnd: function(swiper){

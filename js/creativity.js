@@ -218,7 +218,7 @@
 				products_container_offset = products_container.offset();
 				var close_div = $("#close-div");
 				close_div_offset = close_div.offset();
-				close_div.offset({ top: products_container_offset.top, left: products_container_offset.left+products_container.width() });
+				close_div.offset({ top: products_container_offset.top, left: products_container_offset.left+products_container.width()+1 });
 
 				var social_div = $("#social-div");
 				social_div_offset = social_div.offset();
