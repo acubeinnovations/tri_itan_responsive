@@ -9,7 +9,7 @@ var v5_slide_acive = 0;
         calculateHeight: false,
         cssWidthAndHeight: false,
 		pagination:'.pagination',
-		simulateTouch: false,
+		simulateTouch: true,
 		centeredSlides: true,
 		slidesPerView: 5,
 		watchActiveIndex: true,
@@ -18,8 +18,9 @@ var v5_slide_acive = 0;
 		speed : 600,	
 		paginationClickable: true,
 		onSlideChangeEnd: function(swiper){
-		  toggle_vertical_nav();
 		  reinit_v_slide();
+		  toggle_vertical_nav();
+
 		},
 		onSlideClick: function(swiper){
 			if(vertical1.clickedSlideIndex == vertical1.activeIndex && swiper.clickedSlideIndex == 0){
@@ -262,6 +263,7 @@ var v5_slide_acive = 0;
 
 			v_slide =horizontal_slide.activeIndex + 1;
 			$('.inner-vertical').removeAttr("style");
+
 			switch(v_slide)
 			{
 			case 1:
@@ -274,19 +276,19 @@ var v5_slide_acive = 0;
 				switch(vs_active)
 				{
 				case 1:
-					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity","1");
-					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
-					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".6");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity","1");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity",".6");
 					break;
 				case 2:
-					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".8");
-					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity","1");
-					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".8");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity","1");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity",".8");
 					break;
 				case 3:
-					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".6");
-					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
-					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity","1");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity",".6");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-1 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity","1");
 					break;
 				}
 
@@ -302,19 +304,19 @@ var v5_slide_acive = 0;
 				switch(vs_active)
 				{
 				case 1:
-					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity","1");
-					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
-					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".6");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity","1");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity",".6");
 					break;
 				case 2:
-					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".8");
-					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity","1");
-					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".8");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity","1");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity",".8");
 					break;
 				case 3:
-					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".6");
-					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
-					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity","1");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity",".6");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-2 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity","1");
 					break;
 				}
 			  break;
@@ -328,19 +330,19 @@ var v5_slide_acive = 0;
 				switch(vs_active)
 				{
 				case 1:
-					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity","1");
-					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
-					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".6");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity","1");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity",".6");
 					break;
 				case 2:
-					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".8");
-					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity","1");
-					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".8");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity","1");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity",".8");
 					break;
 				case 3:
-					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".6");
-					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
-					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity","1");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity",".6");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-3 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity","1");
 					break;
 				}
 			  break;
@@ -354,19 +356,19 @@ var v5_slide_acive = 0;
 				switch(vs_active)
 				{
 				case 1:
-					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity","1");
-					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
-					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".6");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity","1");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity",".6");
 					break;
 				case 2:
-					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".8");
-					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity","1");
-					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".8");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity","1");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity",".8");
 					break;
 				case 3:
-					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".6");
-					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
-					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity","1");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity",".6");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-4 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity","1");
 					break;
 				}
 			  break;
@@ -380,19 +382,19 @@ var v5_slide_acive = 0;
 				switch(vs_active)
 				{
 				case 1:
-					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity","1");
-					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
-					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".6");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity","1");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity",".6");
 					break;
 				case 2:
-					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".8");
-					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity","1");
-					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity",".8");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity","1");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity",".8");
 					break;
 				case 3:
-					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(1)').css("opacity",".6");
-					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(2)').css("opacity",".8");
-					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(3)').css("opacity","1");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(1)>.inner-vertical').css("opacity",".6");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(2)>.inner-vertical').css("opacity",".8");
+					$('.swiper-container-vertical-5 > .swiper-wrapper > .swiper-slide:nth-child(3)>.inner-vertical').css("opacity","1");
 					break;
 				}
 			  break;
@@ -404,10 +406,14 @@ var v5_slide_acive = 0;
 
 	function reinit_v_slide(){
 			v_slide =horizontal_slide.activeIndex + 1;
+			v1_slide_acive = vertical1.activeIndex;
+			v2_slide_acive = vertical2.activeIndex;
+			v3_slide_acive = vertical3.activeIndex;
+			v4_slide_acive = vertical4.activeIndex;
+			v5_slide_acive = vertical5.activeIndex;
 			switch(v_slide)
 			{
 			case 1:
-			  v1_slide_acive = vertical1.activeIndex;
 					v1(true,v1_slide_acive);
 					v2(false,v2_slide_acive);
 					v3(false,v3_slide_acive);
@@ -415,7 +421,6 @@ var v5_slide_acive = 0;
 					v5(false,v5_slide_acive);
 			  break;
 			case 2:
-			  v2_slide_acive = vertical2.activeIndex;
 					v1(false,v1_slide_acive);
 					v2(true,v2_slide_acive);
 					v3(false,v3_slide_acive);
@@ -423,7 +428,6 @@ var v5_slide_acive = 0;
 					v5(false,v5_slide_acive);
 			  break;
 			case 3:
-			  v3_slide_acive = vertical3.activeIndex;
 					v1(false,v1_slide_acive);
 					v2(false,v2_slide_acive);
 					v3(true,v3_slide_acive);
@@ -431,7 +435,6 @@ var v5_slide_acive = 0;
 					v5(false,v5_slide_acive);
 			  break;
 			case 4:
-			  v4_slide_acive = vertical4.activeIndex;
 					v1(false,v1_slide_acive);
 					v2(false,v2_slide_acive);
 					v3(false,v3_slide_acive);
@@ -439,7 +442,6 @@ var v5_slide_acive = 0;
 					v5(false,v5_slide_acive);
 			  break;
 			case 5:
-			  v5_slide_acive = vertical5.activeIndex;
 					v1(false,v1_slide_acive);
 					v2(false,v2_slide_acive);
 					v3(false,v3_slide_acive);
@@ -599,6 +601,7 @@ function v1(simulateTouch,ini_slide){
 		slidesPerView: 3,
 		watchActiveIndex: true,
 		simulateTouch: simulateTouch,
+		initialSlide: ini_slide,
 		autoResize : true,
 		speed : 600,	
 		mode: 'vertical',
@@ -612,7 +615,6 @@ function v1(simulateTouch,ini_slide){
 		  }
 		}
 		});
-	vertical1.swipeTo(ini_slide);	
 }
 
 function v2(simulateTouch,ini_slide){
@@ -624,6 +626,7 @@ function v2(simulateTouch,ini_slide){
 		slidesPerView: 3,
 		watchActiveIndex: true,
 		simulateTouch: simulateTouch,
+		initialSlide: ini_slide,
 		autoResize : true,
 		speed : 600,	
 		mode: 'vertical',
@@ -637,7 +640,6 @@ function v2(simulateTouch,ini_slide){
 		  }
 		}
 		});
-	vertical2.swipeTo(ini_slide);
 }
 
 
@@ -651,6 +653,7 @@ function v3(simulateTouch,ini_slide){
 		slidesPerView: 3,
 		watchActiveIndex: true,
 		simulateTouch: simulateTouch,
+		initialSlide: ini_slide,
 		autoResize : true,
 		speed : 600,	
 		mode: 'vertical',
@@ -664,7 +667,6 @@ function v3(simulateTouch,ini_slide){
 		  }
 		}
 		});
-	vertical3.swipeTo(ini_slide);
 }
 
 
@@ -677,6 +679,7 @@ function v4(simulateTouch,ini_slide){
 		slidesPerView: 3,
 		watchActiveIndex: true,
 		simulateTouch: simulateTouch,
+		initialSlide: ini_slide,
 		autoResize : true,
 		speed : 600,	
 		mode: 'vertical',
@@ -690,7 +693,6 @@ function v4(simulateTouch,ini_slide){
 		  }
 		}
 		});
-		vertical4.swipeTo(ini_slide);
 }
 
 
@@ -703,6 +705,7 @@ function v5(simulateTouch,ini_slide){
 		slidesPerView: 3,
 		watchActiveIndex: true,
 		simulateTouch: simulateTouch,
+		initialSlide: ini_slide,
 		autoResize : true,
 		speed : 600,	
 		mode: 'vertical',
@@ -716,7 +719,6 @@ function v5(simulateTouch,ini_slide){
 		  }
 		}
 		});
-		vertical5.swipeTo(ini_slide);
 
 }
 
