@@ -10,7 +10,7 @@ change_slide();
 		var horizontal_slide = new Swiper('.swiper-container-horizontal',{
 		    calculateHeight: false,
 		    cssWidthAndHeight: true,
-			simulateTouch: false,
+			simulateTouch: true,
 			centeredSlides: true,
 			slidesPerView: 2,
 			watchActiveIndex: true,
@@ -232,7 +232,22 @@ change_slide();
 	function change_slide(){
 
 	var slide_width = 572;
-	var slide_height = $(window).height()-152;
+	
+			//alert(navigator.userAgent);
+		IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+		
+		if(IS_IPAD==true){
+			isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+			if(isSafari==true){
+			var slide_height = $(window).height()-172;
+			}else{
+				var slide_height = $(window).height()-152;
+			}	
+		}else{
+			var slide_height = $(window).height()-152;			
+		}
+
 		if(slide_height > 724){
 			//$(".swiper-container-horizontal").css("bottom","-420px");
 			slide_height = 572;
@@ -240,6 +255,15 @@ change_slide();
 		}else{
 			container_top = -1*(slide_height-1);
 		}
+	
+//	var slide_height = $(window).height()-152;
+//		if(slide_height > 724){
+//			//$(".swiper-container-horizontal").css("bottom","-420px");
+//			slide_height = 572;
+//			container_top = (-1*(slide_height))+($(window).height()-slide_height) -151;
+//		}else{
+//			container_top = -1*(slide_height-1);
+//		}
 
 		var horizontal_container_width =  slide_width * 2;
 		var horizontal_container_height =  slide_height * 3;
@@ -304,7 +328,7 @@ change_slide();
 			  toggle_vertical_nav();
 			},
 			onSlideClick: function(swiper){
-			  if(horizontal_slide.activeIndex == 0){
+			  if(horizontal_slide.activeIndex == 1){
 			  	swiper.swipeTo(swiper.clickedSlideIndex);
 			  }
 			}
