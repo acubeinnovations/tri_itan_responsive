@@ -635,7 +635,7 @@ function v2(simulateTouch,ini_slide){
 		  toggle_vertical_nav();
 		},
 		onSlideClick: function(swiper){
-		  if(horizontal_slide.activeIndex == 0){
+		  if(horizontal_slide.activeIndex == 1){
 		  	swiper.swipeTo(swiper.clickedSlideIndex);
 		  }
 		}
@@ -662,7 +662,7 @@ function v3(simulateTouch,ini_slide){
 		  toggle_vertical_nav();
 		},
 		onSlideClick: function(swiper){
-		  if(horizontal_slide.activeIndex == 0){
+		  if(horizontal_slide.activeIndex == 2){
 		  	swiper.swipeTo(swiper.clickedSlideIndex);
 		  }
 		}
@@ -688,7 +688,7 @@ function v4(simulateTouch,ini_slide){
 		  toggle_vertical_nav();
 		},
 		onSlideClick: function(swiper){
-		  if(horizontal_slide.activeIndex == 0){
+		  if(horizontal_slide.activeIndex == 3){
 		  	swiper.swipeTo(swiper.clickedSlideIndex);
 		  }
 		}
@@ -714,7 +714,7 @@ function v5(simulateTouch,ini_slide){
 		  toggle_vertical_nav();
 		},
 		onSlideClick: function(swiper){
-		  if(horizontal_slide.activeIndex == 0){
+		  if(horizontal_slide.activeIndex == 4){
 		  	swiper.swipeTo(swiper.clickedSlideIndex);
 		  }
 		}

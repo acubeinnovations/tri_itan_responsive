@@ -83,10 +83,10 @@ var window_width = $(window).width();
 
 
 if(window_width >= 2000){
-item_width = 315;
-var margin_left = ((scroll_content_width/2)- (window_width/2)-150)+item_width;
+item_width = 316;
+var margin_left = ((scroll_content_width/2)- (window_width/2)-158)+item_width;
 }else{
-item_width = 200;
+item_width = 201;
 var margin_left = ((scroll_content_width/2)- (window_width/2)-100)+item_width;
 }
 
