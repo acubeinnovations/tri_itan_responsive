@@ -8,8 +8,11 @@ body {
 	color:#000000;
 	font-family: "MuseoSans";
 	font-size:12px;
-	background:url('../images/bg.png') !important;
-	background-size:100% !important; 
+	background:url('../images/bg.jpg')  no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	overflow: hidden;
 	margin:0px;
 
@@ -35,13 +38,15 @@ margin:0px  !important;
 background:none !important;
 }
 .navbar {
-min-height:50px !important;
+max-height:50px !important;
 padding:0px  !important;
 margin:1px  !important;
 background:url('../images/menu_bg.png') !important;
 background-position:-1px -0px !important; 
 }
-
+.navbar-collapse {
+min-height:50px !important;
+}
 .navbar-nav > li{
 height:50px !important;
 width:150px !important;
