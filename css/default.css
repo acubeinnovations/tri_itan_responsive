@@ -44,9 +44,7 @@ margin:1px  !important;
 background:url('../images/menu_bg.png') !important;
 background-position:-1px -0px !important; 
 }
-.navbar-collapse {
-min-height:50px !important;
-}
+
 .navbar-nav > li{
 height:50px !important;
 width:150px !important;
