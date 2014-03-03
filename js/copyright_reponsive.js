@@ -4,7 +4,11 @@ function change_copyright_pos(){
 window_width=$( window ).width();
 
 if(window_width<890){
-$('.copy').html("");
+	if(window_width=768){
+		$('.copy').html("&copy Copyright 2014");
+	}else{
+		$('.copy').html("");
+	}
 }else if(window_width>890 && window_width<1095){
 $('.copy').html("&copy Copyright 2014");
 }else if(window_width>1095 && window_width<1152){

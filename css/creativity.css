@@ -498,6 +498,141 @@ background-size:201px 138px !important;
 
 
 
+
+
+
+/*==============================================*/
+@media (min-width: 1024px) and (max-height: 768px){
+
+body {
+	color:#fff;
+	font-family: "MuseoSans";
+	font-size:12px;
+	background-color: #000;
+	overflow: hidden;
+	margin:0px;
+	background:url("../images/creativity/creativity_null.png");
+	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position: bottom ;
+	background-size:151px 103px !important;
+}
+.container-outer{
+	width:100%; height:4000px; position:fixed; bottom:100px;
+	background:url("../images/creativity/creativity_bg_600.png");
+	background-repeat:repeat;
+	background-position: bottom;
+	background-size:151px 103px !important;
+}
+.products-container-outer{width:100%; height:412px; position:fixed; bottom:100px;  }
+.products-container{width:604px; height:412px; margin-left:auto; margin-right:auto;
+	background-size: 603px 411px !important;
+ }
+
+.product-image{
+	width:151px;
+	height:103px;
+	float:left;
+	background-repeat:no-repeat !important;
+	background-position: center !important;
+	margin:0px !important;
+	padding:0px !important;
+	border-left:1px solid #222222 !important;
+	border-bottom:1px solid #222222 !important;
+	background-size:150px 102px !important;
+}
+
+.flip-box{
+width:100%;
+height:100%;
+}
+
+
+
+#close-div{
+	background:url("../images/creativity/mask_close.jpg") #222222 ;
+	cursor: url(../images/creativity/close.png) , auto ;
+	background-position:0px 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; 
+	background-size: 35px 75px;
+	width:35px;
+	height:35px;
+	display:none;
+}
+#close-div:hover{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-position:0px 35px;
+	background-size: 35px 70px;
+}
+
+
+
+#social-div{
+	width:150px;
+	height:19px;
+	background:url("../images/creativity/social_bg.png");
+	background-size:150px 19px;
+	display:none;	
+}
+#social_facebook:hover{
+	background:url("../images/creativity/social_bg_hover.png");
+	background-size:150px 19px;
+	background-position:-102px;
+}
+#social_google_plus:hover{
+	background:url("../images/creativity/social_bg_hover.png");
+	background-size:150px 19px;
+	background-position:-118px;
+}
+#social_pintrest:hover{
+	background:url("../images/creativity/social_bg_hover.png");
+	background-size:150px 19px;
+	background-position:-134px;
+}
+
+.social_link{
+	cursor:pointer;
+	display:block;
+	float:right;
+	width:16px;
+	height:19px;
+	
+}
+
+
+
+
+#product_bottom{
+width:100%;
+height:103px;
+position:fixed; bottom:-3px;
+background:url("../images/creativity/creativity_bg_600.png");
+background-repeat:repeat;
+background-position: bottom;
+background-size:151px 103px !important;
+}
+
+}
+/*==============================================*/
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 2000px) { 
 body {
 	color:#fff;

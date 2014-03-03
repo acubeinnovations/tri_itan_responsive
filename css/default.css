@@ -250,3 +250,15 @@ width: 151px;
 
 }
 
+
+@media (width: 768px) {
+.navbar-nav > li{
+width:118px !important;
+}
+
+.navbar {
+
+background:url('../images/menu_bg.png') !important;
+background-position:-129px -0px !important; 
+}
+}
