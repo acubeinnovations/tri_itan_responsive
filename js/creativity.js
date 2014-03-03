@@ -181,9 +181,13 @@
 					$('#close-div').show();
 					$('.products-container').css('background-image','');
 					flip_image($(this));
-					$("#social_facebook").attr("href", $(this).attr('social_facebook'));
-					$("#social_google_plus").attr("href", $(this).attr('social_google_plus'));
-					$("#social_pintrest").attr("href", $(this).attr('social_pintrest'));
+					//$("#social_facebook").attr("href", $(this).attr('social_facebook'));
+					$("#social_facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=http://trixlabs.com/itan/creativity.html");
+					
+					//$("#social_google_plus").attr("href", $(this).attr('social_google_plus'));
+					$("#social_google_plus").attr("href", "https://plus.google.com/share?url={www.trixlabs.com/itan/creativity.html}");
+					//$("#social_pintrest").attr("href", $(this).attr('social_pintrest'));
+					$("#social_pintrest").attr("href","http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.trixlabs.com%2Fitan&media=http%3A%2F%2Fwww.trixlabs.com%2Fitan%2Fimages%2Fcreativity%2Fshare_img.jpg&description=Itan");
 					$('#social-div').show();
 					align_close_button();
 				});
@@ -218,11 +222,11 @@
 				products_container_offset = products_container.offset();
 				var close_div = $("#close-div");
 				close_div_offset = close_div.offset();
-				close_div.offset({ top: products_container_offset.top, left: products_container_offset.left+products_container.width()+1 });
+				close_div.offset({ top: products_container_offset.top+1, left: products_container_offset.left+products_container.width()+1 });
 
 				var social_div = $("#social-div");
 				social_div_offset = social_div.offset();
-				social_div.offset({ top: (products_container_offset.top+products_container.height()-social_div.height()), left: products_container_offset.left });
+				social_div.offset({ top: (products_container_offset.top+products_container.height()-social_div.height()), left: products_container_offset.left});
 
 			}
 

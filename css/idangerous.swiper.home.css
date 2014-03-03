@@ -101,7 +101,7 @@ margin:0px 0px 0px 0px !important;
 	display: inline-block;
 	width: 30px;
 	height: 30px;
-	background: #494444;
+	background: #814a36;
 	
 	-webkit-transition: 400ms;
 	-moz-transition: 400ms;
@@ -109,16 +109,16 @@ margin:0px 0px 0px 0px !important;
 	-o-transition: 400ms;
 	transition: 400ms;
 	margin:0px;
-	opacity:0.6
+	/*opacity:0.6*/
 }
 
 .swiper-pagination-switch:nth-child(2){
 background: #000;
-	opacity:0.6
+	/*opacity:0.6*/
 }
 .swiper-pagination-switch:nth-child(4){
 background: #000;
-	opacity:0.6
+	/*opacity:0.6*/
 }
 
 .swiper-active-switch {
