@@ -50,8 +50,18 @@ font-size:12px;
 #address-container{
 float:left;
 bottom:0px;
-
+background:#181818;
+display:block;
 }
+
+#address-table tr {
+background:#181818;
+}
+#address-table tr td {
+background:#181818;
+}
+
+
 #address-table td:nth-child(1){
   
 	
@@ -111,6 +121,15 @@ width:50%;
 
 /*==============================================*/
 @media (min-height: 1024px) and (min-width: 768px){
+.title_head {
+	font-size: 12px;
+	
+}
+
+.content{
+font-size:8px;
+}
+@media (min-height: 928px) and (min-width: 768px){
 .title_head {
 	font-size: 12px;
 	
