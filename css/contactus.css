@@ -129,6 +129,7 @@ width:50%;
 .content{
 font-size:8px;
 }
+}
 @media (min-height: 928px) and (min-width: 768px){
 .title_head {
 	font-size: 12px;
