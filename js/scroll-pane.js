@@ -92,8 +92,14 @@ var margin_left = ((scroll_content_width/2)- (window_width/2)-100)+item_width;
 
 $(".scroll-content" ).attr( "style", "margin-left: -"+margin_left+"px;" );
 
-if ($.support.touch) {
+//if ($.support.touch) {
 $('.ui-slider-handle').addTouch();
-}
+$(".itan_product").click(function(){
+    $(".choose_product").hide();
+});
+$(".choose_product").click(function(){
+    $(".itan_product:nth-child(8)").trigger("click");
+});
+//}
 });
 
