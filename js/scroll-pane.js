@@ -92,5 +92,8 @@ var margin_left = ((scroll_content_width/2)- (window_width/2)-100)+item_width;
 
 $(".scroll-content" ).attr( "style", "margin-left: -"+margin_left+"px;" );
 
+if ($.support.touch) {
+$('.ui-slider-handle').addTouch();
+}
 });
 
